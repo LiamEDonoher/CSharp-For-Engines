@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.TextCore.Text;
 
 /// <summary>
 /// A class to control the top-down character.
@@ -34,6 +35,15 @@ public class TopDownCharacterController : MonoBehaviour
     /// When the script first initialises this gets called.
     /// Use this for grabbing components and setting up input bindings.
     /// </summary>
+    /// 
+
+    [Header("Projectile Parameters")]
+
+    [SerializeField] private GameObject m_projectilePrefab;
+    [SerializeField] private Transform m_firePoint;
+    [SerializeField] private float m_projectileSpeed;
+
+
     private void Awake()
     {
         //bind movement inputs to variables
@@ -75,7 +85,8 @@ public class TopDownCharacterController : MonoBehaviour
     {
         // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.
         m_playerDirection = m_moveAction.ReadValue<Vector2>();
-        
+        m_playerDirection.Normalize();
+
         // ~~ handle animator ~~
         // Update the animator speed to ensure that we revert to idle if the player doesn't move.
         m_animator.SetFloat("Speed", m_playerDirection.magnitude);
@@ -93,6 +104,51 @@ public class TopDownCharacterController : MonoBehaviour
             // just log that an attack has been registered for now
             // we will look at how to do this in future sessions.
             Debug.Log("Attack!");
+            Fire();
         }
+    }
+
+    private void Fire()
+    {
+
+        Vector2 firingPos = m_firePoint.position;
+
+        if (m_playerDirection.x > 0)
+        {
+            firingPos.x = gameObject.transform.position.x + 1;
+        }
+        else if (m_playerDirection.x < 0)
+        {
+            firingPos.x = gameObject.transform.position.x -1;
+        }
+        else
+        {
+            firingPos.x = gameObject.transform.position.x;
+        }
+
+        if (m_playerDirection.y > 0)
+        {
+            firingPos.y = gameObject.transform.position.y + 1;
+        }
+        else if (m_playerDirection.y < 0)
+        {
+            firingPos.y = gameObject.transform.position.y - 1;
+        }
+        else
+        {
+            firingPos.y = gameObject.transform.position.y;
+        }
+
+        m_firePoint.position = firingPos;
+
+        GameObject spawnedProjectile = Instantiate(m_projectilePrefab, m_firePoint.position, Quaternion.identity);
+
+        Rigidbody2D projectileRB = spawnedProjectile.GetComponent<Rigidbody2D>();
+        if (projectileRB != null)
+        {
+            spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_playerDirection.normalized * m_projectileSpeed, ForceMode2D.Impulse);
+        }
+
+        
     }
 }

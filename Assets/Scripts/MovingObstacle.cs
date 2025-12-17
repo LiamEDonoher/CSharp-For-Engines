@@ -10,7 +10,7 @@ public class MovingObstacle : MonoBehaviour
     [SerializeField] private Transform m_startWaypoint;
     [SerializeField] private Transform m_endWaypoint;
     [SerializeField] private float m_speed = 5;
-    private bool target = false;
+    //private bool target = false;
 
     private Transform m_target;
 
@@ -27,24 +27,25 @@ public class MovingObstacle : MonoBehaviour
         transform.Translate(direction * m_speed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("MovingObstacleWaypoint"))
-        {
-            ChangeTarget();
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+        //if (collision.CompareTag("MovingObstacleWaypoint"))
+        //{
+            //ChangeTarget();
+        //}
+    //}
 
-    void ChangeTarget()
-    {
-        target = !target;
-        if (target == true)
-        {
-            direction = EndPoint.position - position;
-        }
-        else
-        {
-            direction = StartPoint.position - position;
-        }
-    }
+    //void ChangeTarget()
+    //{
+        //Vector3 direction;
+        //target = !target;
+        //if (target == true)
+        //{
+           //direction = (m_startWaypoint) - (m_endWaypoint), transform.position;
+        //}
+        //else
+        //{
+            //direction = (m_endWaypoint) - (m_startWaypoint), transform.position;
+        //}
+    //}
 }
