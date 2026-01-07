@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.TextCore.Text;
+using UnityEngine.UI;
 
 /// <summary>
 /// A class to control the top-down character.
@@ -41,7 +42,9 @@ public class TopDownCharacterController : MonoBehaviour
 
     [SerializeField] private GameObject m_projectilePrefab;
     [SerializeField] private Transform m_firePoint;
+    [SerializeField] private Image m_reloadBar;
     [SerializeField] private float m_projectileSpeed;
+    bool can_fire = true;
 
 
     private void Awake()
@@ -82,7 +85,8 @@ public class TopDownCharacterController : MonoBehaviour
     /// Used to catch changes in variables or input.
     /// </summary>
     void Update()
-    {
+    { 
+
         // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.
         m_playerDirection = m_moveAction.ReadValue<Vector2>();
         m_playerDirection.Normalize();
@@ -99,12 +103,14 @@ public class TopDownCharacterController : MonoBehaviour
         }
 
         // check if an attack has been triggered.
-        if (m_attackAction.IsPressed())
+        if ((m_attackAction.IsPressed()) && (can_fire == true))
         {
             // just log that an attack has been registered for now
             // we will look at how to do this in future sessions.
-            Debug.Log("Attack!");
+        
             Fire();
+
+            
         }
     }
 
@@ -142,6 +148,7 @@ public class TopDownCharacterController : MonoBehaviour
         m_firePoint.position = firingPos;
 
         GameObject spawnedProjectile = Instantiate(m_projectilePrefab, m_firePoint.position, Quaternion.identity);
+        can_fire = false;
 
         Rigidbody2D projectileRB = spawnedProjectile.GetComponent<Rigidbody2D>();
         if (projectileRB != null)
@@ -149,6 +156,8 @@ public class TopDownCharacterController : MonoBehaviour
             spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_playerDirection.normalized * m_projectileSpeed, ForceMode2D.Impulse);
         }
 
-        
+        new WaitForSeconds(5f);
+        can_fire = true;
+
     }
 }
