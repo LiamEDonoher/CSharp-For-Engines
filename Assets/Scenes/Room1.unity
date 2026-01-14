@@ -8318,6 +8318,8 @@ MonoBehaviour:
   m_firePoint: {fileID: 1798786587}
   m_reloadBar: {fileID: 0}
   m_projectileSpeed: 5
+  m_cooldownTimer: 0
+  m_direction: {x: 1, y: 1}
 --- !u!114 &1343588124
 MonoBehaviour:
   m_ObjectHideFlags: 0

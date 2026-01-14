@@ -13,13 +13,13 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
-        m_Player = FindObjectOfType<TopDownCharacterController>().transform;
+        m_Player = FindObjectOfType<TopDownCharacterController>().transform; 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (m_PlayerInSight && Vector2.Distance(transform.position, m_Player.position) >= m_stoppingDistance)
+        if (Vector2.Distance(transform.position, m_Player.position) >= m_stoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, m_Player.position, m_speed * Time.deltaTime);
         }

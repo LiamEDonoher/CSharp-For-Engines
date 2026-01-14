@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 /// <summary>
@@ -19,10 +18,10 @@ public class TopDownCharacterController : MonoBehaviour
     //The components that we need to edit to make the player move smoothly.
     private Animator m_animator;
     private Rigidbody2D m_rigidbody;
-    
+
     //The direction that the player is moving in.
     private Vector2 m_playerDirection;
-   
+
 
     [Header("Movement parameters")]
     //The speed at which the player moves
@@ -44,7 +43,10 @@ public class TopDownCharacterController : MonoBehaviour
     [SerializeField] private Transform m_firePoint;
     [SerializeField] private Image m_reloadBar;
     [SerializeField] private float m_projectileSpeed;
+    [SerializeField] private float m_cooldownTimer;
+    [SerializeField] private Vector2 m_direction;
     bool can_fire = true;
+    private float currentCooldown;
 
 
     private void Awake()
@@ -52,7 +54,7 @@ public class TopDownCharacterController : MonoBehaviour
         //bind movement inputs to variables
         m_moveAction = InputSystem.actions.FindAction("Move");
         m_attackAction = InputSystem.actions.FindAction("Attack");
-        
+
         //get components from Character game object so that we can use them later.
         m_animator = GetComponent<Animator>();
         m_rigidbody = GetComponent<Rigidbody2D>();
@@ -63,6 +65,7 @@ public class TopDownCharacterController : MonoBehaviour
     /// </summary>
     void Start()
     {
+        currentCooldown = m_cooldownTimer;
         //not currently used - left here for demonstration purposes.
     }
 
@@ -74,18 +77,18 @@ public class TopDownCharacterController : MonoBehaviour
     {
         //clamp the speed to the maximum speed for if the speed has been changed in code.
         float speed = m_playerSpeed > m_playerMaxSpeed ? m_playerMaxSpeed : m_playerSpeed;
-        
+
         //apply the movement to the character using the clamped speed value.
         m_rigidbody.linearVelocity = m_playerDirection * (speed * Time.fixedDeltaTime);
     }
-    
+
     /// <summary>
     /// When the update loop is called, it runs every frame.
     /// Therefore, this will run more or less frequently depending on performance.
     /// Used to catch changes in variables or input.
     /// </summary>
     void Update()
-    { 
+    {
 
         // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.
         m_playerDirection = m_moveAction.ReadValue<Vector2>();
@@ -94,7 +97,7 @@ public class TopDownCharacterController : MonoBehaviour
         // ~~ handle animator ~~
         // Update the animator speed to ensure that we revert to idle if the player doesn't move.
         m_animator.SetFloat("Speed", m_playerDirection.magnitude);
-        
+
         // If there is movement, set the directional values to ensure the character is facing the way they are moving.
         if (m_playerDirection.magnitude > 0)
         {
@@ -103,61 +106,35 @@ public class TopDownCharacterController : MonoBehaviour
         }
 
         // check if an attack has been triggered.
-        if ((m_attackAction.IsPressed()) && (can_fire == true))
+        if ((m_attackAction.WasPressedThisFrame()) && (can_fire == true))
         {
-            // just log that an attack has been registered for now
-            // we will look at how to do this in future sessions.
-        
-            Fire();
+            currentCooldown = m_cooldownTimer;
+            Fire(); 
+        }
 
-            
+        if (can_fire == false)
+        {
+            currentCooldown -= Time.deltaTime;
+            if (currentCooldown < 0)
+            {
+                can_fire = true;
+            }
         }
     }
 
     private void Fire()
     {
-
+        can_fire = false;
         Vector2 firingPos = m_firePoint.position;
-
-        if (m_playerDirection.x > 0)
-        {
-            firingPos.x = gameObject.transform.position.x + 1;
-        }
-        else if (m_playerDirection.x < 0)
-        {
-            firingPos.x = gameObject.transform.position.x -1;
-        }
-        else
-        {
-            firingPos.x = gameObject.transform.position.x;
-        }
-
-        if (m_playerDirection.y > 0)
-        {
-            firingPos.y = gameObject.transform.position.y + 1;
-        }
-        else if (m_playerDirection.y < 0)
-        {
-            firingPos.y = gameObject.transform.position.y - 1;
-        }
-        else
-        {
-            firingPos.y = gameObject.transform.position.y;
-        }
-
         m_firePoint.position = firingPos;
 
         GameObject spawnedProjectile = Instantiate(m_projectilePrefab, m_firePoint.position, Quaternion.identity);
-        can_fire = false;
 
         Rigidbody2D projectileRB = spawnedProjectile.GetComponent<Rigidbody2D>();
         if (projectileRB != null)
         {
-            spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_playerDirection.normalized * m_projectileSpeed, ForceMode2D.Impulse);
+            spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_direction.normalized * m_projectileSpeed, ForceMode2D.Impulse);
         }
-
-        new WaitForSeconds(5f);
-        can_fire = true;
 
     }
 }
