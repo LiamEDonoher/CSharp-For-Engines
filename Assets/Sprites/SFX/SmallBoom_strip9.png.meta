@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 49ff310adc202a748933564afe9d0e61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3858132142031043157
+    second: SmallBoom_strip9_0
+  - first:
+      213: 4836734568297980870
+    second: SmallBoom_strip9_1
+  - first:
+      213: -4638778729555775190
+    second: SmallBoom_strip9_2
+  - first:
+      213: -3445778829115599960
+    second: SmallBoom_strip9_3
+  - first:
+      213: -3375554094493542015
+    second: SmallBoom_strip9_4
+  - first:
+      213: -8990183223033879221
+    second: SmallBoom_strip9_5
+  - first:
+      213: -2926086759933989928
+    second: SmallBoom_strip9_6
+  - first:
+      213: -6432582076182115534
+    second: SmallBoom_strip9_7
+  - first:
+      213: 145819253784297687
+    second: SmallBoom_strip9_8
+  - first:
+      213: -1086475952277399078
+    second: SmallBoom_strip9_9
+  - first:
+      213: 1057235337264002001
+    second: SmallBoom_strip9_10
+  - first:
+      213: -4350401474092178368
+    second: SmallBoom_strip9_11
+  - first:
+      213: -982438561158859303
+    second: SmallBoom_strip9_12
+  - first:
+      213: -3830384725446463759
+    second: SmallBoom_strip9_13
+  - first:
+      213: 1913089937697763746
+    second: SmallBoom_strip9_14
+  - first:
+      213: -1872888802533972722
+    second: SmallBoom_strip9_15
+  - first:
+      213: -8986195323613615696
+    second: SmallBoom_strip9_16
+  - first:
+      213: 2154161461677824124
+    second: SmallBoom_strip9_17
+  - first:
+      213: 4930842271780490717
+    second: SmallBoom_strip9_18
+  - first:
+      213: 4500749331801018827
+    second: SmallBoom_strip9_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmallBoom_strip9_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba509b11249257ac0800000000000000
+      internalID: -3858132142031043157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3e048b6788f1340800000000000000
+      internalID: 4836734568297980870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21b031a25fbf9fb0800000000000000
+      internalID: -4638778729555775190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 13
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3d00459622e20d0800000000000000
+      internalID: -3445778829115599960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 7
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189d89d7f6f9721d0800000000000000
+      internalID: -3375554094493542015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 19
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45a36d9df37c3380800000000000000
+      internalID: -8990183223033879221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_6
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 17
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db292c48937467d0800000000000000
+      internalID: -2926086759933989928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 23
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bce98dea0eab6a0800000000000000
+      internalID: -6432582076182115534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 10
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0c937b6dd060200800000000000000
+      internalID: 145819253784297687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_9
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 20
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad95087b0ef0ce0f0800000000000000
+      internalID: -1086475952277399078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_10
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 14
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d37c9110fd0cae00800000000000000
+      internalID: 1057235337264002001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 27
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0446662a8e440a3c0800000000000000
+      internalID: -4350401474092178368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_12
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 25
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5fa74755dad52f0800000000000000
+      internalID: -982438561158859303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 10
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe6eaee26db7dac0800000000000000
+      internalID: -3830384725446463759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 24
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a179df8929ac8a10800000000000000
+      internalID: 1913089937697763746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_15
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 18
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05e72d9e892206e0800000000000000
+      internalID: -1872888802533972722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_16
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 14
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9ebbdc6fe9a4380800000000000000
+      internalID: -8986195323613615696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_17
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 18
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c789428af6e15ed10800000000000000
+      internalID: 2154161461677824124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 4
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddc4f4ebeedd6440800000000000000
+      internalID: 4930842271780490717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBoom_strip9_19
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 7
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc19319dbafd57e30800000000000000
+      internalID: 4500749331801018827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SmallBoom_strip9_0: -3858132142031043157
+      SmallBoom_strip9_1: 4836734568297980870
+      SmallBoom_strip9_10: 1057235337264002001
+      SmallBoom_strip9_11: -4350401474092178368
+      SmallBoom_strip9_12: -982438561158859303
+      SmallBoom_strip9_13: -3830384725446463759
+      SmallBoom_strip9_14: 1913089937697763746
+      SmallBoom_strip9_15: -1872888802533972722
+      SmallBoom_strip9_16: -8986195323613615696
+      SmallBoom_strip9_17: 2154161461677824124
+      SmallBoom_strip9_18: 4930842271780490717
+      SmallBoom_strip9_19: 4500749331801018827
+      SmallBoom_strip9_2: -4638778729555775190
+      SmallBoom_strip9_3: -3445778829115599960
+      SmallBoom_strip9_4: -3375554094493542015
+      SmallBoom_strip9_5: -8990183223033879221
+      SmallBoom_strip9_6: -2926086759933989928
+      SmallBoom_strip9_7: -6432582076182115534
+      SmallBoom_strip9_8: 145819253784297687
+      SmallBoom_strip9_9: -1086475952277399078
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

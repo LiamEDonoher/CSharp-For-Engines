@@ -1,0 +1,1495 @@
+fileFormatVersion: 2
+guid: 6bf1f2e2270c3d940a18c499a66e60f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6323612534960957510
+    second: BigBoom_strip10_0
+  - first:
+      213: -3848353957575382036
+    second: BigBoom_strip10_1
+  - first:
+      213: 8498891934064909691
+    second: BigBoom_strip10_2
+  - first:
+      213: -848020830660431757
+    second: BigBoom_strip10_3
+  - first:
+      213: -4418814170047189110
+    second: BigBoom_strip10_4
+  - first:
+      213: 2838162764422481598
+    second: BigBoom_strip10_5
+  - first:
+      213: 6313500003283988125
+    second: BigBoom_strip10_6
+  - first:
+      213: -8442640638314715382
+    second: BigBoom_strip10_7
+  - first:
+      213: -6253474938870496065
+    second: BigBoom_strip10_8
+  - first:
+      213: 7102139300498112212
+    second: BigBoom_strip10_9
+  - first:
+      213: 3150345021094078894
+    second: BigBoom_strip10_10
+  - first:
+      213: 4533122028140330833
+    second: BigBoom_strip10_11
+  - first:
+      213: -8136316861498094489
+    second: BigBoom_strip10_12
+  - first:
+      213: 4398454814438529264
+    second: BigBoom_strip10_13
+  - first:
+      213: 3734859954351442132
+    second: BigBoom_strip10_14
+  - first:
+      213: -269150707172955138
+    second: BigBoom_strip10_15
+  - first:
+      213: 3922040187718274134
+    second: BigBoom_strip10_16
+  - first:
+      213: -6567984228810652201
+    second: BigBoom_strip10_17
+  - first:
+      213: -4109639112716651634
+    second: BigBoom_strip10_18
+  - first:
+      213: 31255627393527865
+    second: BigBoom_strip10_19
+  - first:
+      213: 7641178974672471288
+    second: BigBoom_strip10_20
+  - first:
+      213: 5558013491306865011
+    second: BigBoom_strip10_21
+  - first:
+      213: 8863332500949837965
+    second: BigBoom_strip10_22
+  - first:
+      213: -1041216542060320577
+    second: BigBoom_strip10_23
+  - first:
+      213: 3543865780854116837
+    second: BigBoom_strip10_24
+  - first:
+      213: -5302388273316760934
+    second: BigBoom_strip10_25
+  - first:
+      213: 7368008442072380063
+    second: BigBoom_strip10_26
+  - first:
+      213: 5673113351096868527
+    second: BigBoom_strip10_27
+  - first:
+      213: -3306342377202737055
+    second: BigBoom_strip10_28
+  - first:
+      213: 2182130234527953697
+    second: BigBoom_strip10_29
+  - first:
+      213: 2436592199387546247
+    second: BigBoom_strip10_30
+  - first:
+      213: 7056646000906701470
+    second: BigBoom_strip10_31
+  - first:
+      213: -6295599000841847653
+    second: BigBoom_strip10_32
+  - first:
+      213: -6050552483149380040
+    second: BigBoom_strip10_33
+  - first:
+      213: -8784831101566173575
+    second: BigBoom_strip10_34
+  - first:
+      213: 3321347323123856850
+    second: BigBoom_strip10_35
+  - first:
+      213: -5168964894582490359
+    second: BigBoom_strip10_36
+  - first:
+      213: 1525690445861620221
+    second: BigBoom_strip10_37
+  - first:
+      213: 7396736025464838713
+    second: BigBoom_strip10_38
+  - first:
+      213: -1100586533085997560
+    second: BigBoom_strip10_39
+  - first:
+      213: -2411871249825522180
+    second: BigBoom_strip10_40
+  - first:
+      213: -5543798506544657544
+    second: BigBoom_strip10_41
+  - first:
+      213: -2606386472294565166
+    second: BigBoom_strip10_42
+  - first:
+      213: -3812299391327815597
+    second: BigBoom_strip10_43
+  - first:
+      213: -6420516598460926316
+    second: BigBoom_strip10_44
+  - first:
+      213: 5969016800596716258
+    second: BigBoom_strip10_45
+  - first:
+      213: 7631482753018778820
+    second: BigBoom_strip10_46
+  - first:
+      213: 699063505673371753
+    second: BigBoom_strip10_47
+  - first:
+      213: -3027145827309299520
+    second: BigBoom_strip10_48
+  - first:
+      213: 5339049761148370231
+    second: BigBoom_strip10_49
+  - first:
+      213: 1877317806846905644
+    second: BigBoom_strip10_50
+  - first:
+      213: 4538426596174720871
+    second: BigBoom_strip10_51
+  - first:
+      213: -3653223426494838404
+    second: BigBoom_strip10_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigBoom_strip10_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7d17447e30e38a0800000000000000
+      internalID: -6323612534960957510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb20cc0776e79ac0800000000000000
+      internalID: -3848353957575382036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d1f5a5f2122f570800000000000000
+      internalID: 8498891934064909691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 41
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3707a5a2c893b34f0800000000000000
+      internalID: -848020830660431757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 47
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fefd99ce73da2c0800000000000000
+      internalID: -4418814170047189110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_5
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 45
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6842c3ffd236720800000000000000
+      internalID: 2838162764422481598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_6
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 29
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e6b297dce0e9750800000000000000
+      internalID: 6313500003283988125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 45
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0769fa0217b5da80800000000000000
+      internalID: -8442640638314715382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_8
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 49
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb401d8eca13739a0800000000000000
+      internalID: -6253474938870496065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_9
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 39
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4def787a01edf8260800000000000000
+      internalID: 7102139300498112212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_10
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 49
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9ab3efa1648bb20800000000000000
+      internalID: 3150345021094078894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_11
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 44
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f7dc29772e8ee30800000000000000
+      internalID: 4533122028140330833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_12
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 49
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c826a2ceef51f80800000000000000
+      internalID: -8136316861498094489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_13
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8173789537a0d30800000000000000
+      internalID: 4398454814438529264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_14
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 42
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d803f02753e4d330800000000000000
+      internalID: 3734859954351442132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_15
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 51
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb29eb9bd8c34cf0800000000000000
+      internalID: -269150707172955138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_16
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 47
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c01c755c2ed6630800000000000000
+      internalID: 3922040187718274134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_17
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 49
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d58f5f7425d9d4a0800000000000000
+      internalID: -6567984228810652201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_18
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 13
+        width: 137
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83f8733001a7f6c0800000000000000
+      internalID: -4109639112716651634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_19
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 28
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930f508d3da0f6000800000000000000
+      internalID: 31255627393527865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_20
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 37
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f44982facbea0a60800000000000000
+      internalID: 7641178974672471288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_21
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 29
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371ac2e92d7022d40800000000000000
+      internalID: 5558013491306865011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_22
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 33
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d882a4d13f1e00b70800000000000000
+      internalID: 8863332500949837965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_23
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 33
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8eb34521bdc81f0800000000000000
+      internalID: -1041216542060320577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_24
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 32
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1d877c6275e2130800000000000000
+      internalID: 3543865780854116837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_25
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 37
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92f1cb65f12a66b0800000000000000
+      internalID: -5302388273316760934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 37
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92bdc304ac604660800000000000000
+      internalID: 7368008442072380063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_27
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 35
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae97ae0982fabe40800000000000000
+      internalID: 5673113351096868527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_28
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 38
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160a20d20238d12d0800000000000000
+      internalID: -3306342377202737055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_29
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 42
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123bdaa03eb784e10800000000000000
+      internalID: 2182130234527953697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_30
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 38
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7828bfa12b380d120800000000000000
+      internalID: 2436592199387546247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_31
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 21
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a89bd662e3ee160800000000000000
+      internalID: 7056646000906701470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_32
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 26
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c7482701a81a8a0800000000000000
+      internalID: -6295599000841847653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_33
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 31
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8360603e29e180ca0800000000000000
+      internalID: -6050552483149380040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_34
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e385b38a2061680800000000000000
+      internalID: -8784831101566173575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_35
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 13
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5fd7a0bcbc71e20800000000000000
+      internalID: 3321347323123856850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_36
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 5
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b32f190d52448b0800000000000000
+      internalID: -5168964894582490359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_37
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 17
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df90ac680675c2510800000000000000
+      internalID: 1525690445861620221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_38
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 19
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a9a2fb93c76a660800000000000000
+      internalID: 7396736025464838713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_39
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 21
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80694da116ee9b0f0800000000000000
+      internalID: -1100586533085997560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_40
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 23
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd1c2e70ef478ed0800000000000000
+      internalID: -2411871249825522180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_41
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b801f61a87013b0800000000000000
+      internalID: -5543798506544657544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_42
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 7
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dabf7b005144dbd0800000000000000
+      internalID: -2606386472294565166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_43
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 4
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 358b77ae6edf71bc0800000000000000
+      internalID: -3812299391327815597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_44
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 11
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496bc3acb2eb5e6a0800000000000000
+      internalID: -6420516598460926316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_45
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 7
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eae7e9a72536d250800000000000000
+      internalID: 5969016800596716258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_46
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 9
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4543b612978e960800000000000000
+      internalID: 7631482753018778820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_47
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 14
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960c91bfd8293b900800000000000000
+      internalID: 699063505673371753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_48
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 11
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c85ce798ea6df5d0800000000000000
+      internalID: -3027145827309299520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_49
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 14
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73df163687d181a40800000000000000
+      internalID: 5339049761148370231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_50
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d00af49929d0a10800000000000000
+      internalID: 1877317806846905644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_51
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 12
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fed2091fabbfe30800000000000000
+      internalID: 4538426596174720871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigBoom_strip10_52
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 14
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79c3a236a42d4dc0800000000000000
+      internalID: -3653223426494838404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BigBoom_strip10_0: -6323612534960957510
+      BigBoom_strip10_1: -3848353957575382036
+      BigBoom_strip10_10: 3150345021094078894
+      BigBoom_strip10_11: 4533122028140330833
+      BigBoom_strip10_12: -8136316861498094489
+      BigBoom_strip10_13: 4398454814438529264
+      BigBoom_strip10_14: 3734859954351442132
+      BigBoom_strip10_15: -269150707172955138
+      BigBoom_strip10_16: 3922040187718274134
+      BigBoom_strip10_17: -6567984228810652201
+      BigBoom_strip10_18: -4109639112716651634
+      BigBoom_strip10_19: 31255627393527865
+      BigBoom_strip10_2: 8498891934064909691
+      BigBoom_strip10_20: 7641178974672471288
+      BigBoom_strip10_21: 5558013491306865011
+      BigBoom_strip10_22: 8863332500949837965
+      BigBoom_strip10_23: -1041216542060320577
+      BigBoom_strip10_24: 3543865780854116837
+      BigBoom_strip10_25: -5302388273316760934
+      BigBoom_strip10_26: 7368008442072380063
+      BigBoom_strip10_27: 5673113351096868527
+      BigBoom_strip10_28: -3306342377202737055
+      BigBoom_strip10_29: 2182130234527953697
+      BigBoom_strip10_3: -848020830660431757
+      BigBoom_strip10_30: 2436592199387546247
+      BigBoom_strip10_31: 7056646000906701470
+      BigBoom_strip10_32: -6295599000841847653
+      BigBoom_strip10_33: -6050552483149380040
+      BigBoom_strip10_34: -8784831101566173575
+      BigBoom_strip10_35: 3321347323123856850
+      BigBoom_strip10_36: -5168964894582490359
+      BigBoom_strip10_37: 1525690445861620221
+      BigBoom_strip10_38: 7396736025464838713
+      BigBoom_strip10_39: -1100586533085997560
+      BigBoom_strip10_4: -4418814170047189110
+      BigBoom_strip10_40: -2411871249825522180
+      BigBoom_strip10_41: -5543798506544657544
+      BigBoom_strip10_42: -2606386472294565166
+      BigBoom_strip10_43: -3812299391327815597
+      BigBoom_strip10_44: -6420516598460926316
+      BigBoom_strip10_45: 5969016800596716258
+      BigBoom_strip10_46: 7631482753018778820
+      BigBoom_strip10_47: 699063505673371753
+      BigBoom_strip10_48: -3027145827309299520
+      BigBoom_strip10_49: 5339049761148370231
+      BigBoom_strip10_5: 2838162764422481598
+      BigBoom_strip10_50: 1877317806846905644
+      BigBoom_strip10_51: 4538426596174720871
+      BigBoom_strip10_52: -3653223426494838404
+      BigBoom_strip10_6: 6313500003283988125
+      BigBoom_strip10_7: -8442640638314715382
+      BigBoom_strip10_8: -6253474938870496065
+      BigBoom_strip10_9: 7102139300498112212
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

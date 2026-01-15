@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 9e9cbae0488f4d942a8392626484a1ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7658891034503432138
+    second: Uzi_Reload_Anim_strip12_0
+  - first:
+      213: 262880982135199814
+    second: Uzi_Reload_Anim_strip12_1
+  - first:
+      213: 6147309613297031894
+    second: Uzi_Reload_Anim_strip12_2
+  - first:
+      213: 723712906153878934
+    second: Uzi_Reload_Anim_strip12_3
+  - first:
+      213: 2254744523691372828
+    second: Uzi_Reload_Anim_strip12_4
+  - first:
+      213: 4961516038832773097
+    second: Uzi_Reload_Anim_strip12_5
+  - first:
+      213: -5897119666601439873
+    second: Uzi_Reload_Anim_strip12_6
+  - first:
+      213: -9113936063150715892
+    second: Uzi_Reload_Anim_strip12_7
+  - first:
+      213: 4437599777795770312
+    second: Uzi_Reload_Anim_strip12_8
+  - first:
+      213: 893339386442572988
+    second: Uzi_Reload_Anim_strip12_9
+  - first:
+      213: 53246790372271249
+    second: Uzi_Reload_Anim_strip12_10
+  - first:
+      213: 8522704362163323532
+    second: Uzi_Reload_Anim_strip12_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638bff2ce2726b590800000000000000
+      internalID: -7658891034503432138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648df564cd0f5a300800000000000000
+      internalID: 262880982135199814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dad9e00681af4550800000000000000
+      internalID: 6147309613297031894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695eaa2cd052b0a00800000000000000
+      internalID: 723712906153878934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11b1e9b2367a4f10800000000000000
+      internalID: 2254744523691372828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7d702dc88dad440800000000000000
+      internalID: 4961516038832773097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d404258e8392ea0800000000000000
+      internalID: -5897119666601439873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c8742307bc48180800000000000000
+      internalID: -9113936063150715892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c78eda8c75859d30800000000000000
+      internalID: 4437599777795770312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 2
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb466c85077c56c00800000000000000
+      internalID: 893339386442572988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194a1997cab2db000800000000000000
+      internalID: 53246790372271249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uzi_Reload_Anim_strip12_11
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 0
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82ca60567ab64670800000000000000
+      internalID: 8522704362163323532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Uzi_Reload_Anim_strip12_0: -7658891034503432138
+      Uzi_Reload_Anim_strip12_1: 262880982135199814
+      Uzi_Reload_Anim_strip12_10: 53246790372271249
+      Uzi_Reload_Anim_strip12_11: 8522704362163323532
+      Uzi_Reload_Anim_strip12_2: 6147309613297031894
+      Uzi_Reload_Anim_strip12_3: 723712906153878934
+      Uzi_Reload_Anim_strip12_4: 2254744523691372828
+      Uzi_Reload_Anim_strip12_5: 4961516038832773097
+      Uzi_Reload_Anim_strip12_6: -5897119666601439873
+      Uzi_Reload_Anim_strip12_7: -9113936063150715892
+      Uzi_Reload_Anim_strip12_8: 4437599777795770312
+      Uzi_Reload_Anim_strip12_9: 893339386442572988
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

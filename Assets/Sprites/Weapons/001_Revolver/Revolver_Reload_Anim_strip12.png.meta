@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 04ede80227851e54fa3db30ed8c49566
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6269068283730830296
+    second: Revolver_Reload_Anim_strip12_0
+  - first:
+      213: 1492310179915249518
+    second: Revolver_Reload_Anim_strip12_1
+  - first:
+      213: -4316352512840766927
+    second: Revolver_Reload_Anim_strip12_2
+  - first:
+      213: -7497606918298713822
+    second: Revolver_Reload_Anim_strip12_3
+  - first:
+      213: -1990169225600235891
+    second: Revolver_Reload_Anim_strip12_4
+  - first:
+      213: -1215132164556963563
+    second: Revolver_Reload_Anim_strip12_5
+  - first:
+      213: 1725995091510706652
+    second: Revolver_Reload_Anim_strip12_6
+  - first:
+      213: 6247335395904863152
+    second: Revolver_Reload_Anim_strip12_7
+  - first:
+      213: -619582688806125994
+    second: Revolver_Reload_Anim_strip12_8
+  - first:
+      213: -7250981175242187715
+    second: Revolver_Reload_Anim_strip12_9
+  - first:
+      213: 2824770197717660893
+    second: Revolver_Reload_Anim_strip12_10
+  - first:
+      213: -6116068463734295749
+    second: Revolver_Reload_Anim_strip12_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3a17c9364300750800000000000000
+      internalID: 6269068283730830296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e673c88b330c5b410800000000000000
+      internalID: 1492310179915249518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ae2c2324c3914c0800000000000000
+      internalID: -4316352512840766927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2214b495b3623f790800000000000000
+      internalID: -7497606918298713822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d860f2932af7164e0800000000000000
+      internalID: -1990169225600235891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5114e600cbbf22fe0800000000000000
+      internalID: -1215132164556963563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd140991467f3f710800000000000000
+      internalID: 1725995091510706652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 2
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb32a9517ef2b650800000000000000
+      internalID: 6247335395904863152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ebab4c3dcc667f0800000000000000
+      internalID: -619582688806125994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 2
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c15a8d9075f5b90800000000000000
+      internalID: -7250981175242187715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 5
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4321f4789933720800000000000000
+      internalID: 2824770197717660893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Revolver_Reload_Anim_strip12_11
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 3
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33f525f22c5f1ba0800000000000000
+      internalID: -6116068463734295749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Revolver_Reload_Anim_strip12_0: 6269068283730830296
+      Revolver_Reload_Anim_strip12_1: 1492310179915249518
+      Revolver_Reload_Anim_strip12_10: 2824770197717660893
+      Revolver_Reload_Anim_strip12_11: -6116068463734295749
+      Revolver_Reload_Anim_strip12_2: -4316352512840766927
+      Revolver_Reload_Anim_strip12_3: -7497606918298713822
+      Revolver_Reload_Anim_strip12_4: -1990169225600235891
+      Revolver_Reload_Anim_strip12_5: -1215132164556963563
+      Revolver_Reload_Anim_strip12_6: 1725995091510706652
+      Revolver_Reload_Anim_strip12_7: 6247335395904863152
+      Revolver_Reload_Anim_strip12_8: -619582688806125994
+      Revolver_Reload_Anim_strip12_9: -7250981175242187715
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
