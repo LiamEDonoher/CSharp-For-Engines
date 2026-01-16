@@ -1,13 +1,17 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class EnemyController : MonoBehaviour
 {
 
+    [SerializeField] private Animator m_animator;
     public Transform m_Player;
+    public Vector2 m_direction;
     public float m_speed;
     public float m_stoppingDistance;
     private float m_playerDistance;
-    bool m_PlayerInSight;
+    bool m_playerInSight;
 
 
 
@@ -21,18 +25,24 @@ public class EnemyController : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, m_Player.position) >= m_stoppingDistance)
         {
-            transform.position = Vector2.MoveTowards(transform.position, m_Player.position, m_speed * Time.deltaTime);
+            Vector2 m_currentPosition = transform.position;
+            Vector2 m_targetPosition = m_Player.position;
+            transform.position = Vector2.MoveTowards(m_currentPosition, m_targetPosition, m_speed * Time.deltaTime);
+            
+            m_direction = (m_targetPosition - m_currentPosition).normalized;
+            
         }
     }
 
+
     enum EnemyStates
     {
-        Distracted,
+        Barrier,
         MoveToPlayer,
         Attack
     }
 
-    private void Distracted()
+    private void Barrier()
     {
         return;
     }
@@ -49,15 +59,16 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.gameObject.name == "Character")
         {
-            m_PlayerInSight = true;
+            m_playerInSight = true;
             m_playerDistance = Vector3.Distance(collision.transform.position, transform.position);
+
         }
 
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        m_PlayerInSight = false;
+        m_playerInSight = false;
     }
 }
 
