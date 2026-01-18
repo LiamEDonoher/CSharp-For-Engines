@@ -1,4 +1,5 @@
 using System.Net;
+using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor.UI;
 using UnityEngine;
@@ -17,35 +18,23 @@ public class MovingObstacle : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        m_target = m_startWaypoint;
+        m_target = m_endWaypoint;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 direction = m_target.position - transform.position;
-        transform.Translate(direction * m_speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, m_target.position, m_speed * Time.deltaTime);
+        if (transform.position == m_target.position)
+            ChangeTarget();
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-        //if (collision.CompareTag("MovingObstacleWaypoint"))
-        //{
-            //ChangeTarget();
-        //}
-    //}
 
-    //void ChangeTarget()
-    //{
-        //Vector3 direction;
-        //target = !target;
-        //if (target == true)
-        //{
-           //direction = (m_startWaypoint) - (m_endWaypoint), transform.position;
-        //}
-        //else
-        //{
-            //direction = (m_endWaypoint) - (m_startWaypoint), transform.position;
-        //}
-    //}
+    void ChangeTarget()
+    {
+        if (m_target == m_startWaypoint)
+            m_target = m_endWaypoint;
+        else
+            m_target = m_startWaypoint;
+    }
 }

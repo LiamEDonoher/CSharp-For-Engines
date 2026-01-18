@@ -45,7 +45,7 @@ public class TopDownCharacterController : MonoBehaviour
     [SerializeField] private float m_projectileSpeed;
     [SerializeField] private float m_cooldownTimer;
     [SerializeField] private Vector2 m_direction;
-    bool can_fire = true;
+    bool m_canFire = true;
     private float currentCooldown;
 
 
@@ -106,25 +106,25 @@ public class TopDownCharacterController : MonoBehaviour
         }
 
         // check if an attack has been triggered.
-        if ((m_attackAction.WasPressedThisFrame()) && (can_fire == true))
+        if ((m_attackAction.WasPressedThisFrame()) && (m_canFire == true))
         {
             currentCooldown = m_cooldownTimer;
             Fire(); 
         }
 
-        if (can_fire == false)
+        if (m_canFire == false)
         {
             currentCooldown -= Time.deltaTime;
             if (currentCooldown < 0)
             {
-                can_fire = true;
+                m_canFire = true;
             }
         }
     }
 
     private void Fire()
     {
-        can_fire = false;
+        m_canFire = false;
         Vector2 firingPos = m_firePoint.position;
         m_firePoint.position = firingPos;
 
