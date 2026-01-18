@@ -118,9 +118,9 @@ TextureImporter:
       name: Player1h_IdleSideF_strip6_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,9 +140,9 @@ TextureImporter:
       name: Player1h_IdleSideF_strip6_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -162,9 +162,9 @@ TextureImporter:
       name: Player1h_IdleSideF_strip6_2
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: Player1h_IdleSideF_strip6_3
       rect:
         serializedVersion: 2
-        x: 49
+        x: 48
         y: 0
-        width: 14
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,9 +206,9 @@ TextureImporter:
       name: Player1h_IdleSideF_strip6_4
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -228,9 +228,9 @@ TextureImporter:
       name: Player1h_IdleSideF_strip6_5
       rect:
         serializedVersion: 2
-        x: 81
+        x: 80
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4b3cab8a62b0a6043937aaec744fbe39
     internalID: 0
     vertices: []
     indices: 
@@ -258,7 +258,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Player1h_IdleSideF_strip6_0: 608035096821231178
       Player1h_IdleSideF_strip6_1: 1918088337049864209

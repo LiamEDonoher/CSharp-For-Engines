@@ -118,9 +118,9 @@ TextureImporter:
       name: Player1h_RunSideF_strip6_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,9 +128,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2711c574e570ea70800000000000000
+      spriteID: 49f536c4c4742d94b8ea112294fd23aa
       internalID: 8854206491498977066
       vertices: []
       indices: 
@@ -140,9 +140,9 @@ TextureImporter:
       name: Player1h_RunSideF_strip6_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -150,9 +150,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b537139482837b1e0800000000000000
+      spriteID: 218be9cf8b134c249810c39503ab8e70
       internalID: -2182213748759891109
       vertices: []
       indices: 
@@ -162,9 +162,9 @@ TextureImporter:
       name: Player1h_RunSideF_strip6_2
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -172,9 +172,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1c0b09d7732179d50800000000000000
+      spriteID: a5d71c356764f8646a1cb44f30a80ee2
       internalID: 6743878996549742785
       vertices: []
       indices: 
@@ -184,9 +184,9 @@ TextureImporter:
       name: Player1h_RunSideF_strip6_3
       rect:
         serializedVersion: 2
-        x: 49
+        x: 48
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,9 +194,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d175191183440740800000000000000
+      spriteID: 51eed4e9794b18149a9d444fdc40643d
       internalID: 5117289298350404055
       vertices: []
       indices: 
@@ -208,7 +208,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -216,9 +216,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ec0b7fe0e2e6b9230800000000000000
+      spriteID: 2d21f2333954593469e581ac6c7961fe
       internalID: 3646629467385213134
       vertices: []
       indices: 
@@ -230,7 +230,7 @@ TextureImporter:
         serializedVersion: 2
         x: 80
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -238,9 +238,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a021d656b61aa0030800000000000000
+      spriteID: 2b47c97022927914aae744a259d84162
       internalID: 3461756746222866954
       vertices: []
       indices: 
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0ade4fa3ab2a0b741b433ee37563cec9
     internalID: 0
     vertices: []
     indices: 
@@ -258,7 +258,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Player1h_RunSideF_strip6_0: 8854206491498977066
       Player1h_RunSideF_strip6_1: -2182213748759891109
