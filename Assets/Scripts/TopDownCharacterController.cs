@@ -1,12 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
-/// <summary>
-/// A class to control the top-down character.
-/// Implements the player controls for moving and shooting.
-/// Updates the player animator so the character animates based on input.
-/// </summary>
+
 public class TopDownCharacterController : MonoBehaviour
 {
     #region Framework Variables
@@ -31,22 +29,37 @@ public class TopDownCharacterController : MonoBehaviour
 
     #endregion
 
-    /// <summary>
-    /// When the script first initialises this gets called.
-    /// Use this for grabbing components and setting up input bindings.
-    /// </summary>
-    /// 
-
     [Header("Projectile Parameters")]
 
     [SerializeField] private GameObject m_projectilePrefab;
     [SerializeField] private Transform m_firePoint;
-    [SerializeField] private Image m_reloadBar;
+    [SerializeField] private UnityEngine.UI.Image m_reloadBar;
     [SerializeField] private float m_projectileSpeed;
     [SerializeField] private float m_cooldownTimer;
     [SerializeField] private Vector2 m_direction;
+    [SerializeField] private float _rotateSpeed;
+    [SerializeField] GameObject _aimCursor;
     bool m_canFire = true;
-    private float currentCooldown;
+    private float m_currentCooldown;
+
+
+    public void HandleAttack(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed && Time.time > m_currentCooldown)
+        {
+            m_currentCooldown = m_cooldownTimer;
+            Fire();
+        }
+
+        if (m_canFire == false)
+        {
+            m_currentCooldown -= Time.deltaTime;
+            if (m_currentCooldown < 0)
+            {
+                m_canFire = true;
+            }
+        }
+    }
 
 
     private void Awake()
@@ -58,21 +71,18 @@ public class TopDownCharacterController : MonoBehaviour
         //get components from Character game object so that we can use them later.
         m_animator = GetComponent<Animator>();
         m_rigidbody = GetComponent<Rigidbody2D>();
+
+        //m_GameInput = new InputSystem_Actions();
     }
 
-    /// <summary>
-    /// Called after Awake(), and is used to initialize variables e.g. set values on the player
-    /// </summary>
+
     void Start()
     {
-        currentCooldown = m_cooldownTimer;
-        //not currently used - left here for demonstration purposes.
+        m_currentCooldown = m_cooldownTimer;
+        Cursor.visible = false;
     }
 
-    /// <summary>
-    /// When a fixed update loop is called, it runs at a constant rate, regardless of pc performance.
-    /// This ensures that physics are calculated properly.
-    /// </summary>
+
     private void FixedUpdate()
     {
         //clamp the speed to the maximum speed for if the speed has been changed in code.
@@ -82,11 +92,7 @@ public class TopDownCharacterController : MonoBehaviour
         m_rigidbody.linearVelocity = m_playerDirection * (speed * Time.fixedDeltaTime);
     }
 
-    /// <summary>
-    /// When the update loop is called, it runs every frame.
-    /// Therefore, this will run more or less frequently depending on performance.
-    /// Used to catch changes in variables or input.
-    /// </summary>
+
     void Update()
     {
 
@@ -105,21 +111,9 @@ public class TopDownCharacterController : MonoBehaviour
             m_animator.SetFloat("Vertical", m_playerDirection.y);
         }
 
-        // check if an attack has been triggered.
-        if ((m_attackAction.WasPressedThisFrame()) && (m_canFire == true))
-        {
-            currentCooldown = m_cooldownTimer;
-            Fire(); 
-        }
 
-        if (m_canFire == false)
-        {
-            currentCooldown -= Time.deltaTime;
-            if (currentCooldown < 0)
-            {
-                m_canFire = true;
-            }
-        }
+
+
     }
 
     private void Fire()
@@ -137,4 +131,14 @@ public class TopDownCharacterController : MonoBehaviour
         }
 
     }
+
+    private void AimMouse()
+    {
+        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90;
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _rotateSpeed * Time.fixedDeltaTime);
+        Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        _aimCursor.transform.position = cursorPos;
+    }    
 }
