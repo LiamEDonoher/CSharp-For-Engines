@@ -1,8 +1,8 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 
 public class TopDownCharacterController : MonoBehaviour
@@ -18,14 +18,13 @@ public class TopDownCharacterController : MonoBehaviour
     private Rigidbody2D m_rigidbody;
 
     //The direction that the player is moving in.
-    private Vector2 m_playerDirection;
 
 
     [Header("Movement parameters")]
     //The speed at which the player moves
-    [SerializeField] private float m_playerSpeed = 200f;
+    [SerializeField] private float m_playerSpeed = 2f;
     //The maximum speed the player can move
-    [SerializeField] private float m_playerMaxSpeed = 1000f;
+    [SerializeField] private float m_playerMaxSpeed = 5f;
 
     #endregion
 
@@ -35,29 +34,24 @@ public class TopDownCharacterController : MonoBehaviour
     [SerializeField] private Transform m_firePoint;
     [SerializeField] private UnityEngine.UI.Image m_reloadBar;
     [SerializeField] private float m_projectileSpeed;
+    [SerializeField] private Transform m_weaponPivot;
     [SerializeField] private float m_cooldownTimer;
-    [SerializeField] private Vector2 m_direction;
+    
     [SerializeField] private float _rotateSpeed;
     [SerializeField] GameObject _aimCursor;
-    bool m_canFire = true;
     private float m_currentCooldown;
+    private float m_nextFireTime;
+    private Vector2 m_aimDirection;
+    private Vector2 m_moveDirection;
+    
 
 
     public void HandleAttack(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed && Time.time > m_currentCooldown)
+        if (ctx.performed && Time.time > m_nextFireTime)
         {
-            m_currentCooldown = m_cooldownTimer;
             Fire();
-        }
-
-        if (m_canFire == false)
-        {
-            m_currentCooldown -= Time.deltaTime;
-            if (m_currentCooldown < 0)
-            {
-                m_canFire = true;
-            }
+            m_nextFireTime = Time.time + m_cooldownTimer;
         }
     }
 
@@ -89,7 +83,7 @@ public class TopDownCharacterController : MonoBehaviour
         float speed = m_playerSpeed > m_playerMaxSpeed ? m_playerMaxSpeed : m_playerSpeed;
 
         //apply the movement to the character using the clamped speed value.
-        m_rigidbody.linearVelocity = m_playerDirection * (speed * Time.fixedDeltaTime);
+        m_rigidbody.linearVelocity = m_moveDirection * speed;
     }
 
 
@@ -97,18 +91,18 @@ public class TopDownCharacterController : MonoBehaviour
     {
 
         // store any movement inputs into m_playerDirection - this will be used in FixedUpdate to move the player.
-        m_playerDirection = m_moveAction.ReadValue<Vector2>();
-        m_playerDirection.Normalize();
+        m_moveDirection = m_moveAction.ReadValue<Vector2>().normalized;
+        AimMouse();
 
         // ~~ handle animator ~~
         // Update the animator speed to ensure that we revert to idle if the player doesn't move.
-        m_animator.SetFloat("Speed", m_playerDirection.magnitude);
+        m_animator.SetFloat("Speed", m_moveDirection.magnitude);
 
         // If there is movement, set the directional values to ensure the character is facing the way they are moving.
-        if (m_playerDirection.magnitude > 0)
+        if (m_moveDirection.magnitude > 0)
         {
-            m_animator.SetFloat("Horizontal", m_playerDirection.x);
-            m_animator.SetFloat("Vertical", m_playerDirection.y);
+            m_animator.SetFloat("Horizontal", m_moveDirection.x);
+            m_animator.SetFloat("Vertical", m_moveDirection.y);
         }
 
 
@@ -118,7 +112,7 @@ public class TopDownCharacterController : MonoBehaviour
 
     private void Fire()
     {
-        m_canFire = false;
+        //m_canFire = false;
         Vector2 firingPos = m_firePoint.position;
         m_firePoint.position = firingPos;
 
@@ -127,18 +121,24 @@ public class TopDownCharacterController : MonoBehaviour
         Rigidbody2D projectileRB = spawnedProjectile.GetComponent<Rigidbody2D>();
         if (projectileRB != null)
         {
-            spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_direction.normalized * m_projectileSpeed, ForceMode2D.Impulse);
+            spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_aimDirection.normalized * m_projectileSpeed, ForceMode2D.Impulse);
         }
 
     }
 
     private void AimMouse()
     {
-        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _rotateSpeed * Time.fixedDeltaTime);
-        Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        _aimCursor.transform.position = cursorPos;
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        Vector2 firePos = m_firePoint.position;
+
+        m_aimDirection = mousePos - firePos;
+        m_aimDirection = m_aimDirection.normalized;
+
+
+        float angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg - 90f;
+        m_weaponPivot.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        _aimCursor.transform.position = mousePos;
+        
     }    
 }
