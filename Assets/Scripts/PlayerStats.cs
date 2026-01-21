@@ -6,17 +6,23 @@ public class PlayerStats : MonoBehaviour
 {
 
     [SerializeField] private TMP_Text m_text;
-    public int points;
-    
+    public int m_points;
+    public bool m_powerOn;
+
+    private void Start()
+    {
+        m_powerOn = false;
+    }
+
 
 
     private void Awake()
     {
-        points = 2000;
+        m_points = 2000;
     }
 
     private void Update()
     {
-        m_text.text = points.ToString();
+        m_text.text = m_points.ToString();
     }
 }

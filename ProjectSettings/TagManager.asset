@@ -12,7 +12,7 @@ TagManager:
   - Barrier
   - Wallbuy
   - MysteryBox
-  - Power
+  - PowerSwitch
   layers:
   - Default
   - TransparentFX

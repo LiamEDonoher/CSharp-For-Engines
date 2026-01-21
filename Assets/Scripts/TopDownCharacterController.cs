@@ -114,13 +114,6 @@ public class TopDownCharacterController : MonoBehaviour
         }
 
 
-        if (m_interact.triggered)
-        {
-            m_playerInteraction.TryInteract();
-
-        }
-
-
     }
 
     private void Fire()

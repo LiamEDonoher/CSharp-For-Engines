@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.PlayerSettings;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    private PlayerStats m_PlayerStats;
-    private bool isInteractDetected;
-    private int cost;
-    private bool buySuccess;
+    /*
+    [SerializeField] private GameObject m_powerSwitch;
+    //private PlayerStats m_PlayerStats;
+    //private bool isInteractDetected;
+    //private int m_cost;
     private float lastBuyTime;
+    private Collider2D m_interactable;
 
     private void Start()
     {
@@ -16,39 +19,6 @@ public class PlayerInteraction : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "PerkMachine")
-        {
-            isInteractDetected = true;
-            cost = 4000;
-        }
-        if (collision.tag == "Wallbuy")
-        {
-            isInteractDetected = true;
-            cost = 1200;
-        }
-        if (collision.tag == "PowerSwitch")
-        {
-            isInteractDetected = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "PerkMachine")
-        {
-            isInteractDetected = false;
-        }
-        if (collision.tag == "Wallbuy")
-        {
-            isInteractDetected = false;
-        }
-        if (collision.tag == "PowerSwitch")
-        {
-            isInteractDetected = false;
-        }
-    }
 
 
     public void TryInteract()
@@ -57,19 +27,58 @@ public class PlayerInteraction : MonoBehaviour
         {
             return;
         }
+        if (m_interactable.tag == ("PowerSwitch"))
+        {
+            TurnOnPower();
+        }
+        else if (m_interactable.tag == ("Barrier"))
+        {
+            return;
+            //FixBarrier();
+        }
+        else if (m_interactable.tag == ("Wallbuy"))
+        {
+            TryPurchase();
+        }
+
+    }
+
+
+    private void TryPurchase()
+    {
 
         if (Time.time < lastBuyTime + 8f)
         {
             return;
         }
 
-        if (m_PlayerStats.points < cost)
+        if (m_PlayerStats.m_points < m_cost)
         {
             return;
         }
 
-        m_PlayerStats.points -= cost;
+        m_PlayerStats.m_points -= m_cost;
         lastBuyTime = Time.time;
+    }
+
+    private void TurnOnPower()
+    {
+        if (m_PlayerStats.m_powerOn == true)
+        {
+            print("Power is already on");
+            return;
+        }
+
+        print("Power is turning on");
+        m_PlayerStats.m_powerOn = true;
+        m_powerSwitch_anim.Play("PowerOn");
+    }*/
+
+    
+
+    public void TryInteract()
+    {
+
     }
 }
 
