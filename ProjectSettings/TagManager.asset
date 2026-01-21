@@ -7,6 +7,12 @@ TagManager:
   - Moving Obstacle Waypoint
   - Environment
   - Enemy
+  - PerkMachine
+  - BuyDoor
+  - Barrier
+  - Wallbuy
+  - MysteryBox
+  - Power
   layers:
   - Default
   - TransparentFX

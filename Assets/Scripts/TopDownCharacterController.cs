@@ -12,6 +12,7 @@ public class TopDownCharacterController : MonoBehaviour
     //The inputs that we need to retrieve from the input system.
     private InputAction m_moveAction;
     private InputAction m_attackAction;
+    private InputAction m_interact;
 
     //The components that we need to edit to make the player move smoothly.
     private Animator m_animator;
@@ -36,9 +37,9 @@ public class TopDownCharacterController : MonoBehaviour
     [SerializeField] private float m_projectileSpeed;
     [SerializeField] private Transform m_weaponPivot;
     [SerializeField] private float m_cooldownTimer;
-    
     [SerializeField] private float _rotateSpeed;
     [SerializeField] GameObject _aimCursor;
+    private PlayerInteraction m_playerInteraction;
     private float m_currentCooldown;
     private float m_nextFireTime;
     private Vector2 m_aimDirection;
@@ -60,11 +61,18 @@ public class TopDownCharacterController : MonoBehaviour
     {
         //bind movement inputs to variables
         m_moveAction = InputSystem.actions.FindAction("Move");
+        m_moveAction.Enable();
         m_attackAction = InputSystem.actions.FindAction("Attack");
+        m_attackAction.Enable();
+        m_interact = InputSystem.actions.FindAction("Interaction");
+        m_interact.Enable();
+        Debug.Log(m_interact.enabled);
+
 
         //get components from Character game object so that we can use them later.
         m_animator = GetComponent<Animator>();
         m_rigidbody = GetComponent<Rigidbody2D>();
+        m_playerInteraction = GetComponent<PlayerInteraction>();
 
         //m_GameInput = new InputSystem_Actions();
     }
@@ -106,6 +114,11 @@ public class TopDownCharacterController : MonoBehaviour
         }
 
 
+        if (m_interact.triggered)
+        {
+            m_playerInteraction.TryInteract();
+
+        }
 
 
     }

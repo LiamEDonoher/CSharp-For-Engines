@@ -3,14 +3,14 @@ using UnityEngine.InputSystem;
 
 public class PerkMachine : MonoBehaviour
 {
-    private InputAction m_Interact;
+    /*private InputAction m_Interact;
     private bool isPlayerDetected;
     private GameObject m_Player;
     private PlayerStats m_PlayerStats;
     
     private void Start()
     {
-        m_Interact = InputSystem.actions.FindAction("Interact");
+        //m_Interact = InputSystem.actions.FindAction("Interact");
         isPlayerDetected = false;
     }
 
@@ -37,11 +37,13 @@ public class PerkMachine : MonoBehaviour
         if (collision.tag == "Player")
         {
             isPlayerDetected = false;
+            m_PlayerStats = null;
         }
     }
 
     private void BuyUpgrade()
     {
-        return;
-    }
+        m_PlayerStats.points -= 2000;
+        print("Perk Baught!");
+    }*/
 }
