@@ -13,6 +13,7 @@ public class TopDownCharacterController : MonoBehaviour
     private InputAction m_moveAction;
     private InputAction m_attackAction;
     private InputAction m_interact;
+    
 
     //The components that we need to edit to make the player move smoothly.
     private Animator m_animator;
@@ -39,11 +40,12 @@ public class TopDownCharacterController : MonoBehaviour
     [SerializeField] private float m_cooldownTimer;
     [SerializeField] private float _rotateSpeed;
     [SerializeField] GameObject _aimCursor;
-    private PlayerInteraction m_playerInteraction;
     private float m_currentCooldown;
     private float m_nextFireTime;
     private Vector2 m_aimDirection;
     private Vector2 m_moveDirection;
+
+
     
 
 
@@ -66,15 +68,11 @@ public class TopDownCharacterController : MonoBehaviour
         m_attackAction.Enable();
         m_interact = InputSystem.actions.FindAction("Interaction");
         m_interact.Enable();
-        Debug.Log(m_interact.enabled);
 
 
         //get components from Character game object so that we can use them later.
         m_animator = GetComponent<Animator>();
         m_rigidbody = GetComponent<Rigidbody2D>();
-        m_playerInteraction = GetComponent<PlayerInteraction>();
-
-        //m_GameInput = new InputSystem_Actions();
     }
 
 
@@ -102,6 +100,7 @@ public class TopDownCharacterController : MonoBehaviour
         m_moveDirection = m_moveAction.ReadValue<Vector2>().normalized;
         AimMouse();
 
+
         // ~~ handle animator ~~
         // Update the animator speed to ensure that we revert to idle if the player doesn't move.
         m_animator.SetFloat("Speed", m_moveDirection.magnitude);
@@ -112,7 +111,6 @@ public class TopDownCharacterController : MonoBehaviour
             m_animator.SetFloat("Horizontal", m_moveDirection.x);
             m_animator.SetFloat("Vertical", m_moveDirection.y);
         }
-
 
     }
 
@@ -146,5 +144,6 @@ public class TopDownCharacterController : MonoBehaviour
 
         _aimCursor.transform.position = mousePos;
         
-    }    
+    }
+
 }

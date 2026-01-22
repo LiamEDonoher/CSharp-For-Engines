@@ -128,9 +128,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d9e64411c384681f0800000000000000
+      spriteID: a16e6f6fd8520754faa51952e4911a70
       internalID: -1043066840864756067
       vertices: []
       indices: 
@@ -150,9 +150,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a30c034db405f37b0800000000000000
+      spriteID: 4a9094aea15fc1345b2aaf0853c7cf3e
       internalID: -5242383154623233990
       vertices: []
       indices: 
@@ -172,9 +172,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ce8dab9df22e3db0800000000000000
+      spriteID: 2d5f62a78d46fda42b4426d3edb9f0e9
       internalID: -4810368879351198010
       vertices: []
       indices: 
@@ -187,16 +187,16 @@ TextureImporter:
         x: 48
         y: 0
         width: 16
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: caaadb268ac9418f0800000000000000
+      spriteID: a68478d1ecc08404e9ff1690ca0bcd05
       internalID: -570659005744174420
       vertices: []
       indices: 
@@ -216,9 +216,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ca24da71af6917150800000000000000
+      spriteID: d4abb4b890d318d48a452adf1576eb33
       internalID: 5868637790323688108
       vertices: []
       indices: 
@@ -238,9 +238,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b97d405047187e2e0800000000000000
+      spriteID: dad01dda140b31741a6dbbb94315ebe1
       internalID: -2096564766217283685
       vertices: []
       indices: 
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7d2c2360180a0c149a0f383dfc078173
     internalID: 0
     vertices: []
     indices: 
@@ -258,7 +258,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Zombie_IdleB_strip6_0: -1043066840864756067
       Zombie_IdleB_strip6_1: -5242383154623233990

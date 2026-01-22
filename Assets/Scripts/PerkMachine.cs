@@ -1,21 +1,46 @@
-using Unity.VisualScripting;
-using UnityEditor.UI;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class PerkMachine : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] PlayerStats m_playerStats;
     [SerializeField] GameObject m_player;
-    private float m_playerDistance;
+
+    [Header("Settings")]
+    private int m_perkCost = 4000;
+    private float m_distanceToPlayer;
 
 
-    private void Update()
+
+
+
+    public void Update()
     {
-        m_playerDistance = Vector2.Distance(m_player.transform.position, transform.position);
-        print(m_playerDistance);
-        if (m_playerDistance > 3)
-            print("Test");
-        return;
+
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            m_distanceToPlayer = Vector3.Distance(transform.position, m_player.transform.position);
+
+            if (m_distanceToPlayer > 3)
+            {
+                print("Too far away");
+                return;
+            }
+
+            if (m_playerStats.m_points < m_perkCost)
+            {
+                print("Not enough points");
+                return;
+            }
+
+            print("Perk Purchased");
+            m_playerStats.m_points -= m_perkCost;
+        }
     }
+
 
 }
