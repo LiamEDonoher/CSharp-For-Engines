@@ -38,8 +38,9 @@ public class TopDownCharacterController : MonoBehaviour
     [SerializeField] private float m_projectileSpeed;
     [SerializeField] private Transform m_weaponPivot;
     [SerializeField] private float m_cooldownTimer;
-    [SerializeField] private float _rotateSpeed;
-    [SerializeField] GameObject _aimCursor;
+    [SerializeField] private float m_rotateSpeed;
+    [SerializeField] GameObject m_aimCursor;
+    [SerializeField] private GameObject m_cursorAnim;
     private float m_currentCooldown;
     private float m_nextFireTime;
     private Vector2 m_aimDirection;
@@ -142,7 +143,7 @@ public class TopDownCharacterController : MonoBehaviour
         float angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg - 90f;
         m_weaponPivot.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        _aimCursor.transform.position = mousePos;
+        m_aimCursor.transform.position = mousePos;
         
     }
 
