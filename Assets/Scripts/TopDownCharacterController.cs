@@ -40,14 +40,15 @@ public class TopDownCharacterController : MonoBehaviour
     [SerializeField] private float m_cooldownTimer;
     [SerializeField] private float m_rotateSpeed;
     [SerializeField] GameObject m_aimCursor;
-    [SerializeField] private GameObject m_cursorAnim;
     private float m_currentCooldown;
     private float m_nextFireTime;
     private Vector2 m_aimDirection;
     private Vector2 m_moveDirection;
+    private Animator m_cursorAnimator;
 
 
-    
+
+
 
 
     public void HandleAttack(InputAction.CallbackContext ctx)
@@ -127,6 +128,10 @@ public class TopDownCharacterController : MonoBehaviour
         if (projectileRB != null)
         {
             spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_aimDirection.normalized * m_projectileSpeed, ForceMode2D.Impulse);
+            m_cursorAnimator = m_aimCursor.GetComponent<Animator>();
+            m_cursorAnimator.Play("RevolvedReload", 0, 0f);
+
+
         }
 
     }
