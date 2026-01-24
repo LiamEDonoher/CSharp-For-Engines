@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using Unity.Cinemachine;
 
 
 public class TopDownCharacterController : MonoBehaviour
@@ -45,6 +46,7 @@ public class TopDownCharacterController : MonoBehaviour
     private Vector2 m_aimDirection;
     private Vector2 m_moveDirection;
     private Animator m_cursorAnimator;
+    private CinemachineImpulseSource m_impulseSource;
 
 
 
@@ -118,19 +120,22 @@ public class TopDownCharacterController : MonoBehaviour
 
     private void Fire()
     {
+        m_cursorAnimator = m_aimCursor.GetComponent<Animator>();
+        m_impulseSource = GetComponent<CinemachineImpulseSource>();
+        
+
         //m_canFire = false;
         Vector2 firingPos = m_firePoint.position;
         m_firePoint.position = firingPos;
 
+        CameraShakeManager.instance.CameraShake(m_impulseSource);
         GameObject spawnedProjectile = Instantiate(m_projectilePrefab, m_firePoint.position, Quaternion.identity);
 
         Rigidbody2D projectileRB = spawnedProjectile.GetComponent<Rigidbody2D>();
         if (projectileRB != null)
         {
             spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_aimDirection.normalized * m_projectileSpeed, ForceMode2D.Impulse);
-            m_cursorAnimator = m_aimCursor.GetComponent<Animator>();
-            m_cursorAnimator.Play("RevolvedReload", 0, 0f);
-
+            m_cursorAnimator.Play("RevolverReload", 0 , 0f);
 
         }
 

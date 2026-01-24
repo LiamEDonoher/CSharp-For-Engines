@@ -17,6 +17,8 @@ public class EnemyController : MonoBehaviour
     private float m_cooldownTime;
     private Rigidbody2D m_rigidBody;
 
+    private float m_health;
+
 
 
     private void Start()
@@ -27,6 +29,7 @@ public class EnemyController : MonoBehaviour
 
         m_agent.stoppingDistance = 2f;
         m_cooldownTime = 30f;
+        m_health = 10;
     }
 
     // Update is called once per frame
@@ -71,8 +74,17 @@ public class EnemyController : MonoBehaviour
     }
 
 
+    public void TakeDamage(float m_damage)
+    {
+        m_health -= m_damage;
 
-        
+        if (m_health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    
 
 
 }

@@ -15,10 +15,19 @@ public class PlayerProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy") || other.CompareTag("Environment"))
+        if (other.CompareTag("Enemy"))
+        {
+            EnemyController m_enemy = other.GetComponent<EnemyController>();
+            m_enemy.TakeDamage(10);
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("Environment"))
         {
             Destroy(gameObject);
         }
+
+            
+        
 
         
     }
