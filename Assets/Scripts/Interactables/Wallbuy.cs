@@ -2,15 +2,17 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
-public class PerkMachine : MonoBehaviour
+public class Wallbuy : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] PlayerStats m_playerStats;
-    [SerializeField] GameObject m_player;
+    [SerializeField] private GameObject m_player;   
+    [SerializeField] private int m_wallbuyIndex;
+    private PlayerStats m_playerStats;
+    private WeaponManager m_weaponManager;
+
 
     [Header("Settings")]
-    private int m_perkCost = 4000;
+    private int m_weaponCost = 1200;
     private float m_distanceToPlayer;
 
 
@@ -31,14 +33,19 @@ public class PerkMachine : MonoBehaviour
                 return;
             }
 
-            if (m_playerStats.m_points < m_perkCost)
+            if (m_playerStats.m_points < m_weaponCost)
             {
                 print("Not enough points");
                 return;
             }
 
-            print("Perk Purchased");
-            m_playerStats.m_points -= m_perkCost;
+            print("Weapon Purchased");
+            m_playerStats.m_points -= m_weaponCost;
+
+            if (m_wallbuyIndex == 1)
+            {
+                m_weaponManager.Shotgun();
+            }
         }
     }
 

@@ -25,4 +25,9 @@ public class PlayerStats : MonoBehaviour
     {
         m_text.text = m_points.ToString();
     }
+
+    public void AddPoints(int m_points)
+    {
+        m_points += m_points;
+    }
 }

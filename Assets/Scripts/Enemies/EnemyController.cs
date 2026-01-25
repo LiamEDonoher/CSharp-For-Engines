@@ -1,38 +1,35 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.AI;
-using UnityEngine.PlayerLoop;
 
 public class EnemyController : MonoBehaviour
 {
 
+    [SerializeField] GameObject m_player;
+    PlayerStats m_playerStats;
     private Animator m_animator;
     public Transform m_target;
     NavMeshAgent m_agent;
     public Vector2 m_direction;
     public float m_speed;
+    public float m_cooldownTime; // Slow down enemy attack speed as waves go up to subtly help the player
     private float m_playerDistance;
     private bool m_canAttack;
-    private float m_cooldownTime;
     private Rigidbody2D m_rigidBody;
-
+    private PlayerHealth m_healthHandler;
     private float m_health;
 
 
 
     private void Start()
     {
-        m_target = FindObjectOfType<TopDownCharacterController>().transform;
+        m_playerStats = m_player.GetComponent<PlayerStats>();
+        m_target = m_player.transform;
         m_agent = GetComponent<NavMeshAgent>();
         m_rigidBody = GetComponent<Rigidbody2D>();
-
         m_agent.stoppingDistance = 2f;
-        m_cooldownTime = 30f;
+        m_cooldownTime = 100f;
         m_health = 10;
     }
-
-    // Update is called once per frame
 
     void Update()
     {
@@ -45,7 +42,7 @@ public class EnemyController : MonoBehaviour
             m_agent.autoRepath = false;
             m_agent.obstacleAvoidanceType = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
             m_agent.SetDestination(m_target.position);
-            
+
         }
         else
         {
@@ -65,12 +62,16 @@ public class EnemyController : MonoBehaviour
             m_cooldownTime -= 1;
             if (m_cooldownTime < 0)
             {
+                m_healthHandler = m_player.GetComponent<PlayerHealth>();
+                m_healthHandler.TakeDamage(10);
                 m_canAttack = true;
+
             }
             return;
         }
-        print("attacking player");
-        
+        m_cooldownTime = 100f;
+        m_canAttack = false;
+
     }
 
 
@@ -80,11 +81,12 @@ public class EnemyController : MonoBehaviour
 
         if (m_health <= 0)
         {
+            m_playerStats.AddPoints(50);
             Destroy(gameObject);
         }
     }
 
-    
+
 
 
 }
