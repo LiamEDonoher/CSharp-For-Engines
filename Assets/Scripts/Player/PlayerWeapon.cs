@@ -11,57 +11,49 @@ public class PlayerWeapon : MonoBehaviour
     [SerializeField] private Transform m_weaponPivot;
     [SerializeField] GameObject m_aimCursor;
     private CinemachineImpulseSource m_impulseSource;
-    private InputAction m_attackAction;
     private PlayerStats m_playerStats;
     private Vector2 m_aimDirection;
-    private CrosshairAnim m_cursorAnim;
+
     private WeaponManager m_weaponManager;
     [Header("Modifiers")]
     private float m_projectileSpeed = 30f;
-    private float m_cooldownTimer;
+    public float m_cooldownTimer = 1.2f; 
     private float m_nextFireTime;
-    private string m_crosshairAnimation;
-    private string m_reloadAnimation;
-    private float m_weaponDamage;
+    public string m_crosshairAnimation;
+    public string m_reloadAnimation;
+    public float m_weaponDamage = 20;
 
 
 
     private void Start()
     {
         m_weaponManager = GetComponent<WeaponManager>();
-        m_weaponManager.Revolver();
-        UpdateWeapon();
-
-
         UnityEngine.Cursor.visible = false;
-        m_cursorAnim = m_aimCursor.GetComponent<CrosshairAnim>();
     }
     private void Update()
     {
         AimMouse();
+
+        if (Input.GetKeyDown(UnityEngine.KeyCode.Mouse0))
+        {
+            if (Time.time > m_nextFireTime)
+            {
+                Fire();
+                m_nextFireTime = Time.time + m_cooldownTimer;
+            }
+        }
     }
 
     private void Awake()
     {
-        m_attackAction = InputSystem.actions.FindAction("Attack");
-        m_attackAction.Enable();
         m_impulseSource = GetComponent<CinemachineImpulseSource>();
         m_playerStats = GetComponent<PlayerStats>();
     }
 
 
-    public void HandleAttack(InputAction.CallbackContext ctx)
-    {
-        if (ctx.performed && Time.time > m_nextFireTime)
-        {
-            Fire();
-            m_nextFireTime = Time.time + m_cooldownTimer;
-        }
-    }
-
     private void Fire()
     {
-        CameraShakeManager.instance.CameraShake(m_impulseSource);
+        //CameraShakeManager.instance.CameraShake(m_impulseSource);
         GameObject spawnedProjectile = Instantiate(m_projectilePrefab, m_firePoint.position, Quaternion.identity);
         PlayerProjectile m_instantiatedProjectile = spawnedProjectile.GetComponent<PlayerProjectile>();
         m_instantiatedProjectile.Initialise(this, m_playerStats, m_weaponDamage);
@@ -70,9 +62,8 @@ public class PlayerWeapon : MonoBehaviour
         if (projectileRB != null)
         {
             spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_aimDirection.normalized * m_projectileSpeed, ForceMode2D.Impulse);
-            m_cursorAnim.ReloadAnim();
+            //m_cursorAnim.ReloadAnim(); TRIGGER CROSSHAIR ANIMATION
         }
-
     }
 
     private void AimMouse()
@@ -91,11 +82,4 @@ public class PlayerWeapon : MonoBehaviour
 
     }
 
-    private void UpdateWeapon()
-    {
-        m_cooldownTimer = m_weaponManager.m_cooldownTimer;
-        m_reloadAnimation = m_weaponManager.m_crosshairAnimation;
-        m_crosshairAnimation = m_weaponManager.m_crosshairAnimation;
-        m_weaponDamage = m_weaponManager.m_weaponDamage;
-    }
 }

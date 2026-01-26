@@ -15,14 +15,15 @@ public class Wallbuy : MonoBehaviour
     private int m_weaponCost = 1200;
     private float m_distanceToPlayer;
 
-
-
+    private void Start()
+    {
+        m_playerStats = m_player.GetComponent<PlayerStats>();
+        m_weaponManager = m_player.GetComponent<WeaponManager>();
+    }
 
 
     public void Update()
     {
-
-
         if (Input.GetKeyDown(KeyCode.E))
         {
             m_distanceToPlayer = Vector3.Distance(transform.position, m_player.transform.position);
@@ -48,6 +49,5 @@ public class Wallbuy : MonoBehaviour
             }
         }
     }
-
 
 }
