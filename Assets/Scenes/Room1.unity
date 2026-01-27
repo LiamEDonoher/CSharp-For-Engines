@@ -7558,6 +7558,37 @@ Transform:
   - {fileID: 1318763295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &420351550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 420351551}
+  m_Layer: 0
+  m_Name: Offset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420351551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420351550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1343588119}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &440100077
 GameObject:
   m_ObjectHideFlags: 0
@@ -7586,7 +7617,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 699179311}
   m_Father: {fileID: 1343588119}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &441315500
@@ -8317,12 +8349,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699179310}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0983, y: -0.0423, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.19999997, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1343588119}
+  m_Father: {fileID: 440100078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &699179313
 MonoBehaviour:
@@ -8387,12 +8419,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 9935ab9243e0d134997f165be7fd50da, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd192cb176ef7d74b92c2b5f4ca2258c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.16}
+  m_Size: {x: 1, y: 0.9375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -13823,7 +13855,7 @@ Transform:
   - {fileID: 1789062137}
   - {fileID: 580824146}
   - {fileID: 1798786587}
-  - {fileID: 699179311}
+  - {fileID: 420351551}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1343588120
@@ -14160,6 +14192,8 @@ MonoBehaviour:
   m_crosshairAnimation: 
   m_reloadAnimation: 
   m_weaponDamage: 50
+  gunArm: {fileID: 420351551}
+  gun: {fileID: 699179314}
 --- !u!1 &1444900283
 GameObject:
   m_ObjectHideFlags: 0
@@ -32622,7 +32656,7 @@ MonoBehaviour:
   m_crosshairAnimation: RevolverCrosshair
   m_reloadAnimation: RevolverReload
   m_spriteArray:
-  - {fileID: 21300000, guid: 9935ab9243e0d134997f165be7fd50da, type: 3}
+  - {fileID: 21300000, guid: fd192cb176ef7d74b92c2b5f4ca2258c, type: 3}
   - {fileID: -2408530018317867212, guid: 3939bef2845aa8b42aefff13c0022d34, type: 3}
   - {fileID: 5519093569847424708, guid: f58816984e2fa264aaf340a683a2f521, type: 3}
   m_aimCursor: {fileID: 696132461}
