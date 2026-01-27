@@ -22,6 +22,7 @@ public class PlayerWeapon : MonoBehaviour
     public string m_crosshairAnimation;
     public string m_reloadAnimation;
     public float m_weaponDamage = 20;
+    private GameObject m_currentWeapon;
 
 
 
@@ -66,6 +67,11 @@ public class PlayerWeapon : MonoBehaviour
         }
     }
 
+
+
+    [SerializeField] private Transform gunArm;
+    [SerializeField] private SpriteRenderer gun;
+
     private void AimMouse()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
@@ -74,12 +80,23 @@ public class PlayerWeapon : MonoBehaviour
         m_aimDirection = mousePos - firePos;
         m_aimDirection = m_aimDirection.normalized;
 
+        if (mousePos.x < transform.position.x)
+        {
+            m_weaponPivot.transform.position = new Vector3(transform.position.x + -0.4f, 0, 0);
+            gun.flipX = true;
+        }
+        else
+        {
+            m_weaponPivot.transform.position = new Vector3(transform.position.x + 0.4f, 0, 0);
+            gun.flipX = false;
+        }
+
 
         float angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg - 90f;
         m_weaponPivot.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         m_aimCursor.transform.position = mousePos;
-
+        
     }
 
 }

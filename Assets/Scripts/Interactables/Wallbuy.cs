@@ -1,14 +1,14 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Wallbuy : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private GameObject m_player;   
+    [SerializeField] private GameObject m_player;
     [SerializeField] private int m_wallbuyIndex;
-    private PlayerStats m_playerStats;
+    [SerializeField] private GameObject m_managers;
     private WeaponManager m_weaponManager;
+    private PlayerStats m_playerStats;
+
 
 
     [Header("Settings")]
@@ -18,7 +18,7 @@ public class Wallbuy : MonoBehaviour
     private void Start()
     {
         m_playerStats = m_player.GetComponent<PlayerStats>();
-        m_weaponManager = m_player.GetComponent<WeaponManager>();
+        m_weaponManager = m_managers.GetComponent<WeaponManager>();
     }
 
 
