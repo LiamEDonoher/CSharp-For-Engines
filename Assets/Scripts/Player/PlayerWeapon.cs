@@ -22,7 +22,7 @@ public class PlayerWeapon : MonoBehaviour
     public string m_crosshairAnimation;
     public string m_reloadAnimation;
     public float m_weaponDamage = 20;
-    private GameObject m_currentWeapon;
+    [SerializeField] public GameObject m_currentWeapon;
 
 
 
@@ -79,23 +79,29 @@ public class PlayerWeapon : MonoBehaviour
 
         m_aimDirection = mousePos - firePos;
         m_aimDirection = m_aimDirection.normalized;
+        float angle = 0.0f;
 
-        if (mousePos.x < transform.position.x)
+        if (mousePos.x > firePos.x) // Is the gun on the right?
         {
-            m_weaponPivot.transform.position = new Vector3(transform.position.x + -0.4f, 0, 0);
-            gun.flipX = true;
+            gun.flipX = false;
+            m_weaponPivot.transform.position = new Vector3(firePos.x + 1.0f, 0, 0);
+            angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg;
         }
         else
         {
-            m_weaponPivot.transform.position = new Vector3(transform.position.x + 0.4f, 0, 0);
-            gun.flipX = false;
+            gun.flipX = true;
+            m_weaponPivot.transform.position = new Vector3(firePos.x + -1.0f, 0, 0);
+            angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg - 180.0f;
         }
 
 
-        float angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg - 90f;
-        m_weaponPivot.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        //float angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg;
+        //m_currentWeapon.transform.LookAt(mousePos);
+        m_currentWeapon.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        //m_weaponPivot.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        m_aimCursor.transform.position = mousePos;
+       // Debug.LogFormat("The mouse position is {0}, {1}", mousePos.x, mousePos.y);
+        m_aimCursor.transform.position = new Vector3 (mousePos.x, mousePos.y, 0);
         
     }
 
