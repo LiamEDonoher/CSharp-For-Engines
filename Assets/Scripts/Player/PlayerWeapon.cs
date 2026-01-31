@@ -84,13 +84,13 @@ public class PlayerWeapon : MonoBehaviour
         if (mousePos.x > firePos.x) // Is the gun on the right?
         {
             gun.flipX = false;
-            m_weaponPivot.transform.position = new Vector3(firePos.x + 1.0f, 0, 0);
+            m_weaponPivot.transform.position = new Vector3(firePos.x + 1.0f, firePos.y, 0);
             angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg;
         }
         else
         {
             gun.flipX = true;
-            m_weaponPivot.transform.position = new Vector3(firePos.x + -1.0f, 0, 0);
+            m_weaponPivot.transform.position = new Vector3(firePos.x + -1.0f, firePos.y, 0);
             angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg - 180.0f;
         }
 

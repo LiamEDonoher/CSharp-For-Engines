@@ -3,7 +3,7 @@ using UnityEngine;
 public class CrosshairAnim : MonoBehaviour
 {
     private Animator m_animator;
-    private WeaponManager m_weaponManager;
+    [SerializeField] private WeaponManager m_weaponManager;
 
     public string m_crosshairAnimation;
     public string m_reloadAnimation;
@@ -11,7 +11,6 @@ public class CrosshairAnim : MonoBehaviour
     private void Start()
     {
         m_animator = GetComponent<Animator>();
-        m_weaponManager = GetComponent<WeaponManager>();
         m_crosshairAnimation = m_weaponManager.m_crosshairAnimation;
         m_reloadAnimation = m_weaponManager.m_reloadAnimation;
     }
