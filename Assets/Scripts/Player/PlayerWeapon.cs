@@ -72,6 +72,7 @@ public class PlayerWeapon : MonoBehaviour
     [SerializeField] private Transform gunArm;
     [SerializeField] private SpriteRenderer gun;
 
+    ///<summary>Makes gun shoot towards hitmarker.< /summary >
     private void AimMouse()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
