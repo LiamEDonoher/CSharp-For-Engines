@@ -96,12 +96,7 @@ public class PlayerWeapon : MonoBehaviour
         }
 
 
-        //float angle = Mathf.Atan2(m_aimDirection.y, m_aimDirection.x) * Mathf.Rad2Deg;
-        //m_currentWeapon.transform.LookAt(mousePos);
         m_currentWeapon.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        //m_weaponPivot.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
-       // Debug.LogFormat("The mouse position is {0}, {1}", mousePos.x, mousePos.y);
         m_aimCursor.transform.position = new Vector3 (mousePos.x, mousePos.y, 0);
         
     }

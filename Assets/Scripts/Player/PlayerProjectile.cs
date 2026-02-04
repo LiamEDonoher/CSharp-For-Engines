@@ -8,6 +8,7 @@ public class PlayerProjectile : MonoBehaviour
     private EnemyController m_enemy;
     private float m_bulletDamage;
 
+// Destroy bullet if it is alive too long
     private void Update()
     {
         if (m_lifeTime > 0)
@@ -20,7 +21,6 @@ public class PlayerProjectile : MonoBehaviour
     {
         m_player = m_playerStats;
         m_bulletDamage = m_weaponDamage;
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
