@@ -40,7 +40,7 @@ public class PerkMachine : MonoBehaviour
 
             print("Perk Purchased");
             m_playerStats.m_points -= m_perkCost;
-            m_playerStats.TriggerPerk(m_perkID);
+            m_playerStats.TriggerPerk(m_perkID)
         }
     }
 
