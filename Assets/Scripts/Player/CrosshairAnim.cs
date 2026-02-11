@@ -15,7 +15,10 @@ public class CrosshairAnim : MonoBehaviour
         m_reloadAnimation = m_weaponManager.m_reloadAnimation;
     }
 
-    public void ReloadAnim() // Feed in current weapon when gun switching is set up
+    /// <summary>
+    /// Plays the crosshair reload animation.
+    /// </summary>
+    public void ReloadAnim()
     {
         m_animator.Play(m_reloadAnimation, 0, 0f);
     }

@@ -10,6 +10,7 @@ public class PerkMachine : MonoBehaviour
     [SerializeField] private GameObject m_player;
 
     [Header("Settings")]
+    [SerializeField] private int m_perkID;
     private int m_perkCost = 4000;
     private float m_distanceToPlayer;
 
@@ -39,6 +40,7 @@ public class PerkMachine : MonoBehaviour
 
             print("Perk Purchased");
             m_playerStats.m_points -= m_perkCost;
+            m_playerStats.TriggerPerk(m_perkID);
         }
     }
 

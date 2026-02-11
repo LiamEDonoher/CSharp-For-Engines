@@ -32,6 +32,9 @@ public class WeaponManager : MonoBehaviour
 
 // IF TIME ADD GUNS SHOOTING AND RELOADING ANIMATIONS (NOT URGENT)
 
+    /// <summary>
+    /// Switches the player weapon to the revolver.
+    /// </summary>
     public void Revolver()
     {
         print("Revolver");
@@ -42,6 +45,9 @@ public class WeaponManager : MonoBehaviour
         m_playerWeapon.m_weaponDamage = 20;
     }
 
+    /// <summary>
+    /// Switches the player weapon to the shotgun.
+    /// </summary>
     public void Shotgun()
     {
         print("Shotgun");
