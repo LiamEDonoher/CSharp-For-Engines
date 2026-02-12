@@ -2,25 +2,31 @@ using UnityEngine;
 
 public class CrosshairAnim : MonoBehaviour
 {
+    [SerializeField] private Sprite[] m_crosshairArray;
     private Animator m_animator;
-    [SerializeField] private WeaponManager m_weaponManager;
-
-    public string m_crosshairAnimation;
-    public string m_reloadAnimation;
+    private SpriteRenderer m_spriteRenderer;
 
     private void Start()
     {
         m_animator = GetComponent<Animator>();
-        m_crosshairAnimation = m_weaponManager.m_crosshairAnimation;
-        m_reloadAnimation = m_weaponManager.m_reloadAnimation;
+        m_spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     /// <summary>
-    /// Plays the crosshair reload animation.
+    /// Changes the crosshair sprite.
     /// </summary>
-    public void ReloadAnim()
+    public void CrosshairUpdate(int m_weaponID)
     {
-        m_animator.Play(m_reloadAnimation, 0, 0f);
+        print("Test");
+        for (int i = 0; i < m_crosshairArray.Length; i++)
+        {
+            if (i == m_weaponID)
+            {
+                m_spriteRenderer.sprite = m_crosshairArray[i];
+                break;
+            }
+        }
     }
+
 
 }

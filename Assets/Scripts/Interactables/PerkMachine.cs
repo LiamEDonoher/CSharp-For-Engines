@@ -26,6 +26,11 @@ public class PerkMachine : MonoBehaviour
         {
             m_distanceToPlayer = Vector3.Distance(transform.position, m_player.transform.position);
 
+            if (m_playerStats.m_powerOn == false)
+            {
+                return;
+            }
+
             if (m_distanceToPlayer > 3)
             {
                 print("Too far away");

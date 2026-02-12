@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class Wallbuy : MonoBehaviour
+public class WallBuy : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject m_player;
-    [SerializeField] private int m_wallbuyIndex;
+    [SerializeField] private int m_buyDoorIndex;
     [SerializeField] private GameObject m_managers;
     private WeaponManager m_weaponManager;
     private PlayerStats m_playerStats;
@@ -30,20 +30,18 @@ public class Wallbuy : MonoBehaviour
 
             if (m_distanceToPlayer > 3)
             {
-                print("Too far away");
                 return;
             }
 
             if (m_playerStats.m_points < m_weaponCost)
             {
-                print("Not enough points");
                 return;
             }
 
             print("Weapon Purchased");
             m_playerStats.m_points -= m_weaponCost;
 
-            if (m_wallbuyIndex == 1)
+            if (m_buyDoorIndex == 1)
             {
                 m_weaponManager.Shotgun();
             }

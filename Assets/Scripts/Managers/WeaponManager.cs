@@ -9,12 +9,11 @@ public class WeaponManager : MonoBehaviour
 {
     public float m_weaponDamage;
     public float m_cooldownTimer;
-    public string m_crosshairAnimation = "RevolverCrosshair";
-    public string m_reloadAnimation = "RevolverReload";
     private SpriteRenderer m_weaponSprite;
     private PlayerWeapon m_playerWeapon;
     public Sprite[] m_spriteArray;
-    
+    private CrosshairAnim m_crosshairAnim;
+
     //[SerializeField] private GameObject m_projectilePrefab;
     [SerializeField] GameObject m_aimCursor;
     [SerializeField] private GameObject m_currentWeapon;
@@ -24,6 +23,7 @@ public class WeaponManager : MonoBehaviour
     {
         m_weaponSprite = m_currentWeapon.GetComponent<SpriteRenderer>();
         m_playerWeapon = m_currentWeapon.GetComponent<PlayerWeapon>();
+        m_crosshairAnim = GetComponent<CrosshairAnim>();
         Revolver();
 
     }
@@ -40,9 +40,8 @@ public class WeaponManager : MonoBehaviour
         print("Revolver");
         m_weaponSprite.sprite = m_spriteArray[0];
         m_playerWeapon.m_cooldownTimer = 1.2f;
-        m_crosshairAnimation = "RevolverCrosshair";
-        m_reloadAnimation = "RevolverReload";
         m_playerWeapon.m_weaponDamage = 20;
+        m_crosshairAnim.CrosshairUpdate(0); // Updates the crosshair in script
     }
 
     /// <summary>
@@ -53,9 +52,8 @@ public class WeaponManager : MonoBehaviour
         print("Shotgun");
         m_weaponSprite.sprite = m_spriteArray[1];
         m_playerWeapon.m_cooldownTimer = 2f;
-        m_crosshairAnimation = "ShotgunCrosshair";
-        m_reloadAnimation = "ShotgunReload";
         m_playerWeapon.m_weaponDamage = 80;
+        m_crosshairAnim.CrosshairUpdate(1);
     }
 
 
