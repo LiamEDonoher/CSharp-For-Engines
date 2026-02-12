@@ -6,6 +6,7 @@ public class PlayerStats : MonoBehaviour
 {
 
     [SerializeField] private TMP_Text m_text;
+    [SerializeField] private PerkUI m_perkUI;
     public int m_points;
     public bool m_powerOn;
     private int m_perkID;
