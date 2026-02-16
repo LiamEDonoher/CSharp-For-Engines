@@ -18,7 +18,7 @@ public class PlayerWeapon : MonoBehaviour
 
     [Header("Modifiers")]
     private float m_projectileSpeed = 30f;
-    public float m_cooldownTimer = 1.2f; 
+    public float m_cooldownTimer = 1.2f;
     private float m_nextFireTime;
     public float m_weaponDamage = 20;
     [SerializeField] public GameObject m_currentWeapon;
@@ -45,6 +45,7 @@ public class PlayerWeapon : MonoBehaviour
             }
         }
     }
+
 
     private void Awake()
     {

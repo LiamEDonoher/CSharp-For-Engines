@@ -13,6 +13,7 @@ public class WeaponManager : MonoBehaviour
     private PlayerWeapon m_playerWeapon;
     public Sprite[] m_spriteArray;
     private CrosshairAnim m_crosshairAnim;
+    private bool m_staminaBuff;
 
     //[SerializeField] private GameObject m_projectilePrefab;
     [SerializeField] GameObject m_aimCursor;
@@ -24,13 +25,19 @@ public class WeaponManager : MonoBehaviour
         m_weaponSprite = m_currentWeapon.GetComponent<SpriteRenderer>();
         m_playerWeapon = m_currentWeapon.GetComponent<PlayerWeapon>();
         m_crosshairAnim = GetComponent<CrosshairAnim>();
+        m_staminaBuff = false;
         Revolver();
-
     }
 
+    /// <summary>
+    /// Triggers stamina perk.
+    /// </summary>
+    public void StaminaBuff()
+    {
+        m_staminaBuff = true;
+    }
 
-
-// IF TIME ADD GUNS SHOOTING AND RELOADING ANIMATIONS (NOT URGENT)
+    // IF TIME ADD GUNS SHOOTING AND RELOADING ANIMATIONS (NOT URGENT)
 
     /// <summary>
     /// Switches the player weapon to the revolver.
@@ -39,9 +46,16 @@ public class WeaponManager : MonoBehaviour
     {
         print("Revolver");
         m_weaponSprite.sprite = m_spriteArray[0];
-        m_playerWeapon.m_cooldownTimer = 1.2f;
         m_playerWeapon.m_weaponDamage = 20;
         m_crosshairAnim.CrosshairUpdate(0); // Updates the crosshair in script
+        if (m_staminaBuff)
+        {
+            m_playerWeapon.m_cooldownTimer = 0.8f;
+        }
+        else
+        {
+            m_playerWeapon.m_cooldownTimer = 1.2f;
+        }
     }
 
     /// <summary>
@@ -51,9 +65,16 @@ public class WeaponManager : MonoBehaviour
     {
         print("Shotgun");
         m_weaponSprite.sprite = m_spriteArray[1];
-        m_playerWeapon.m_cooldownTimer = 2f;
         m_playerWeapon.m_weaponDamage = 80;
         m_crosshairAnim.CrosshairUpdate(1);
+        if (m_staminaBuff)
+        {
+            m_playerWeapon.m_cooldownTimer = 1.2f;
+        }
+        else
+        {
+            m_playerWeapon.m_cooldownTimer = 2f;
+        }
     }
 
 

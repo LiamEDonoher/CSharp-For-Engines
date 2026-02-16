@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -6,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Image m_healthBar;
     [SerializeField] private float m_maxHealth = 100;
     [SerializeField] private ParticleSystem m_bloodEffect;
+    [SerializeField] FadeManager m_fadeManager;
     private PlayerStats m_stats;
 
     private float m_currentHealth;
@@ -29,7 +32,11 @@ public class PlayerHealth : MonoBehaviour
             m_canRevive = false;
             m_stats.LosePerk(1);
         }
-
+        else if ((m_currentHealth <= 0) && (m_canRevive == false))
+        {
+            SceneManager.LoadScene("DeathScreen");
+        }
+        
 
     }
 
