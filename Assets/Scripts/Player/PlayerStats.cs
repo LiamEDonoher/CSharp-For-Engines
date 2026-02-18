@@ -9,6 +9,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private PerkUI m_perkUI;
     public int m_points;
     public bool m_powerOn;
+    public int m_wave;
     private int m_perkID;
     private PlayerHealth m_health;
     private bool[] m_perks = new bool[3];

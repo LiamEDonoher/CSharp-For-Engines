@@ -55,14 +55,14 @@ public class PlayerWeapon : MonoBehaviour
 
     private void Fire()
     {
-        GameObject spawnedProjectile = Instantiate(m_projectilePrefab, m_gunPos.position, Quaternion.identity);
-        PlayerProjectile m_instantiatedProjectile = spawnedProjectile.GetComponent<PlayerProjectile>();
+        GameObject m_spawnedProjectile = Instantiate(m_projectilePrefab, m_gunPos.position, Quaternion.identity);
+        PlayerProjectile m_instantiatedProjectile = m_spawnedProjectile.GetComponent<PlayerProjectile>();
         m_instantiatedProjectile.Initialise(this, m_playerStats, m_weaponDamage);
 
-        Rigidbody2D projectileRB = spawnedProjectile.GetComponent<Rigidbody2D>();
+        Rigidbody2D projectileRB = m_spawnedProjectile.GetComponent<Rigidbody2D>();
         if (projectileRB != null)
         {
-            spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_aimDirection.normalized * m_projectileSpeed, ForceMode2D.Impulse);
+            m_spawnedProjectile.GetComponent<Rigidbody2D>().AddForce(m_aimDirection.normalized * m_projectileSpeed, ForceMode2D.Impulse);
         }
     }
 
