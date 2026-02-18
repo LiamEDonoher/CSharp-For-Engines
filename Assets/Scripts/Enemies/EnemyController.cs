@@ -4,12 +4,11 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-
     GameObject m_player;
     PlayerStats m_playerStats;
+    NavMeshAgent m_agent;
     private Animator m_animator;
     public Transform m_target;
-    NavMeshAgent m_agent;
     public Vector2 m_direction;
     public float m_speed;
     public float m_cooldownTime; // Slow down enemy attack speed as waves go up to subtly help the player
@@ -18,8 +17,6 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D m_rigidBody;
     private PlayerHealth m_healthHandler;
     private float m_health;
-
-
 
     void Update()
     {
@@ -45,7 +42,6 @@ public class EnemyController : MonoBehaviour
                 AttackPlayer();
             }
         }
-
     }
 
 
@@ -56,7 +52,6 @@ public class EnemyController : MonoBehaviour
             m_cooldownTime -= 1;
             if (m_cooldownTime < 0)
             {
-                m_healthHandler = m_player.GetComponent<PlayerHealth>();
                 m_healthHandler.TakeDamage(10);
                 m_canAttack = true;
 
@@ -65,7 +60,6 @@ public class EnemyController : MonoBehaviour
         }
         m_cooldownTime = 100f;
         m_canAttack = false;
-
     }
 
 
@@ -91,9 +85,4 @@ public class EnemyController : MonoBehaviour
         m_health = 10;
         m_agent.stoppingDistance = 2f;
     }
-
-
 }
-
-
-

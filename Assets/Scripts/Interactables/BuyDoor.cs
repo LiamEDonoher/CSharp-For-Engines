@@ -5,6 +5,7 @@ public class BuyDoor : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject m_player;
     [SerializeField] private GameObject m_managers;
+    [SerializeField] private int m_doorID;
     private PlayerStats m_playerStats;
     private float m_distanceToPlayer;
 
