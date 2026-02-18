@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
 
-    [SerializeField] GameObject m_player;
+    GameObject m_player;
     PlayerStats m_playerStats;
     private Animator m_animator;
     public Transform m_target;
@@ -21,38 +21,31 @@ public class EnemyController : MonoBehaviour
 
 
 
-    private void Start()
-    {
-        m_playerStats = m_player.GetComponent<PlayerStats>();
-        m_target = m_player.transform;
-        m_agent = GetComponent<NavMeshAgent>();
-        m_rigidBody = GetComponent<Rigidbody2D>();
-        m_agent.stoppingDistance = 2f;
-        m_cooldownTime = 100f;
-        m_health = 10;
-    }
-
     void Update()
     {
-        float distance = Vector3.Distance(transform.position, m_target.position);
-
-        if (distance > 3f)
+        if (m_target)
         {
-            m_rigidBody.bodyType = RigidbodyType2D.Dynamic;
-            m_agent.isStopped = false;
-            m_agent.autoRepath = false;
-            m_agent.obstacleAvoidanceType = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
-            m_agent.SetDestination(m_target.position);
+            float distance = Vector3.Distance(transform.position, m_target.position);
 
+            if (distance > 3f)
+            {
+                m_rigidBody.bodyType = RigidbodyType2D.Dynamic;
+                m_agent.isStopped = false;
+                m_agent.autoRepath = false;
+                m_agent.obstacleAvoidanceType = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
+                m_agent.SetDestination(m_target.position);
+
+            }
+            else
+            {
+                m_agent.isStopped = true;
+                m_rigidBody.linearVelocity = Vector3.zero;
+                m_rigidBody.bodyType = RigidbodyType2D.Kinematic;
+                m_agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
+                AttackPlayer();
+            }
         }
-        else
-        {
-            m_agent.isStopped = true;
-            m_rigidBody.linearVelocity = Vector3.zero;
-            m_rigidBody.bodyType = RigidbodyType2D.Kinematic;
-            m_agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
-            AttackPlayer();
-        }
+
     }
 
 
@@ -87,7 +80,17 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-
+    public void Initialise(GameObject m_player)
+    {
+        m_target = m_player.transform;
+        m_playerStats = m_player.GetComponent<PlayerStats>();
+        m_healthHandler = m_player.GetComponent<PlayerHealth>();
+        m_agent = GetComponent<NavMeshAgent>();
+        m_rigidBody = GetComponent<Rigidbody2D>();
+        m_cooldownTime = 100f;
+        m_health = 10;
+        m_agent.stoppingDistance = 2f;
+    }
 
 
 }
