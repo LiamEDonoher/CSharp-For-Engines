@@ -7,6 +7,7 @@ public class PlayerStats : MonoBehaviour
 
     [SerializeField] private TMP_Text m_text;
     [SerializeField] private PerkUI m_perkUI;
+    [SerializeField] private GameObject m_powerDoor;
     public int m_points;
     public bool m_powerOn;
     public int m_wave;
@@ -20,14 +21,13 @@ public class PlayerStats : MonoBehaviour
         m_powerOn = false;
     }
 
-    private void Awake()
-    {
-        m_points = 2000;
-    }
-
     private void Update()
     {
         m_text.text = m_points.ToString();
+        if (m_powerOn)
+        {
+            Destroy(m_powerDoor);
+        }
     }
 
     public void AddPoints(int m_pointsIncrease)

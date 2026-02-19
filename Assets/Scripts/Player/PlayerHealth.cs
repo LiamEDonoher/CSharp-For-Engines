@@ -8,7 +8,6 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Image m_healthBar;
     [SerializeField] private float m_maxHealth = 100;
     [SerializeField] private ParticleSystem m_bloodEffect;
-    [SerializeField] FadeManager m_fadeManager;
     private PlayerStats m_stats;
 
     private float m_currentHealth;
