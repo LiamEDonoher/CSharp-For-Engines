@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 367326361}
   - component: {fileID: 367326360}
   m_Layer: 5
-  m_Name: ControlsButton
+  m_Name: ReturnButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -955,6 +955,7 @@ MonoBehaviour:
   m_controlsPanel: {fileID: 1329760564}
   PlayButton: {fileID: 2114999156}
   ControlsButton: {fileID: 705858531}
+  ReturnButton: {fileID: 367326360}
   QuitButton: {fileID: 1544215528}
 --- !u!1 &941761581
 GameObject:
@@ -1506,6 +1507,7 @@ MonoBehaviour:
   m_controlsPanel: {fileID: 667395461}
   PlayButton: {fileID: 2114999156}
   ControlsButton: {fileID: 705858531}
+  ReturnButton: {fileID: 367326360}
   QuitButton: {fileID: 1544215528}
 --- !u!1 &1120526914
 GameObject:
@@ -1729,6 +1731,7 @@ GameObject:
   - component: {fileID: 1329760565}
   - component: {fileID: 1329760567}
   - component: {fileID: 1329760566}
+  - component: {fileID: 1329760568}
   m_Layer: 5
   m_Name: Panel_Controls
   m_TagString: Untagged
@@ -1795,6 +1798,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329760564}
   m_CullTransparentMesh: 1
+--- !u!114 &1329760568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329760564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f729344acc3cf4f97b8159b3462374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_menuPanel: {fileID: 815798833}
+  m_controlsPanel: {fileID: 1329760564}
+  PlayButton: {fileID: 2114999156}
+  ControlsButton: {fileID: 367326360}
+  ReturnButton: {fileID: 367326360}
+  QuitButton: {fileID: 1544215528}
 --- !u!1 &1544215526
 GameObject:
   m_ObjectHideFlags: 0
