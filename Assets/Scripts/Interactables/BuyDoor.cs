@@ -13,6 +13,7 @@ public class BuyDoor : MonoBehaviour
     [Header("Settings")]
     private int m_doorCost = 2000;
 
+
     private void Start()
     {
         m_playerStats = m_player.GetComponent<PlayerStats>();

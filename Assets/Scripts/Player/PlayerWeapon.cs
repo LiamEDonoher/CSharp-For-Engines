@@ -15,6 +15,7 @@ public class PlayerWeapon : MonoBehaviour
     private PlayerStats m_playerStats;
     private Vector2 m_aimDirection;
     private SpriteRenderer m_weaponRenderer;
+    private AudioSource m_weaponSound;
 
     [Header("Modifiers")]
     private float m_projectileSpeed = 30f;
@@ -30,6 +31,7 @@ public class PlayerWeapon : MonoBehaviour
         m_cursorAnimator = m_aimCursor.GetComponent<Animator>();
         UnityEngine.Cursor.visible = false;
         m_weaponRenderer = m_currentWeapon.GetComponent<SpriteRenderer>();
+        m_weaponSound = m_currentWeapon.GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -55,6 +57,7 @@ public class PlayerWeapon : MonoBehaviour
 
     private void Fire()
     {
+        m_weaponSound.Play();
         GameObject m_spawnedProjectile = Instantiate(m_projectilePrefab, m_gunPos.position, Quaternion.identity);
         PlayerProjectile m_instantiatedProjectile = m_spawnedProjectile.GetComponent<PlayerProjectile>();
         m_instantiatedProjectile.Initialise(this, m_playerStats, m_weaponDamage);

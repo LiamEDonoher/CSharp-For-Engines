@@ -12,12 +12,14 @@ public class WeaponManager : MonoBehaviour
     private SpriteRenderer m_weaponSprite;
     private PlayerWeapon m_playerWeapon;
     public Sprite[] m_spriteArray;
+    public AudioClip[] m_weaponSound;
     private CrosshairAnim m_crosshairAnim;
     private bool m_staminaBuff;
 
     //[SerializeField] private GameObject m_projectilePrefab;
     [SerializeField] GameObject m_aimCursor;
     [SerializeField] private GameObject m_currentWeapon;
+    [SerializeField] private AudioSource m_weaponSoundSource;
     //[SerializeField] private float m_projectileSpeed;
 
     private void Start()
@@ -46,6 +48,8 @@ public class WeaponManager : MonoBehaviour
     {
         print("Revolver");
         m_weaponSprite.sprite = m_spriteArray[0];
+        m_weaponSoundSource.Stop();
+        m_weaponSoundSource.clip = m_weaponSound[0];
         m_playerWeapon.m_weaponDamage = 20;
         m_crosshairAnim.CrosshairUpdate(0); // Updates the crosshair in script
         if (m_staminaBuff)
@@ -65,7 +69,9 @@ public class WeaponManager : MonoBehaviour
     {
         print("Shotgun");
         m_weaponSprite.sprite = m_spriteArray[1];
-        m_playerWeapon.m_weaponDamage = 80;
+        m_weaponSoundSource.Stop();
+        m_weaponSoundSource.clip = m_weaponSound[1];
+        m_playerWeapon.m_weaponDamage = 50;
         m_crosshairAnim.CrosshairUpdate(1);
         if (m_staminaBuff)
         {

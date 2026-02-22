@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
     private bool m_canAttack;
     private Rigidbody2D m_rigidBody;
     private PlayerHealth m_healthHandler;
-    private float m_health;
+    private float m_health = 100;
 
     void Update()
     {
