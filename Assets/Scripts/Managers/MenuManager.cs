@@ -13,7 +13,6 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Button ControlsButton;
     [SerializeField] private Button ReturnButton;
     [SerializeField] private Button QuitButton;
-    private bool m_controlsPanelOpen = false;
 
 
  
@@ -22,14 +21,12 @@ public class MenuManager : MonoBehaviour
     {
         m_controlsPanel.SetActive(true);
         m_menuPanel.SetActive(false);
-        m_controlsPanelOpen = true;
     }
 
     public void CloseControlsPanel()
     {
         m_menuPanel.SetActive(true);
         m_controlsPanel.SetActive(false);
-        m_controlsPanelOpen = false;
     }
 
     public void LoadLevel()
@@ -50,6 +47,5 @@ public class MenuManager : MonoBehaviour
         QuitButton.onClick.AddListener(Quit);
         m_menuPanel.SetActive(true);
         m_controlsPanel.SetActive(false);
-        m_controlsPanelOpen = false;
     }
 }

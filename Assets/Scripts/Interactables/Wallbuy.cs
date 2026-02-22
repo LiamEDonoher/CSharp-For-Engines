@@ -4,7 +4,7 @@ public class WallBuy : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject m_player;
-    [SerializeField] private int m_buyDoorIndex;
+    [SerializeField] private int m_wallBuyIndex;
     [SerializeField] private GameObject m_managers;
     private WeaponManager m_weaponManager;
     private PlayerStats m_playerStats;
@@ -41,7 +41,7 @@ public class WallBuy : MonoBehaviour
             print("Weapon Purchased");
             m_playerStats.m_points -= m_weaponCost;
 
-            if (m_buyDoorIndex == 1)
+            if (m_wallBuyIndex == 1)
             {
                 m_weaponManager.Shotgun();
             }

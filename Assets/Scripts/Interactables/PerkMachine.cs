@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,19 +9,30 @@ public class PerkMachine : MonoBehaviour
     [Header("References")]
     [SerializeField] private PlayerStats m_playerStats;
     [SerializeField] private GameObject m_player;
+    [SerializeField] private Material m_powerOff;
+    [SerializeField] private Material m_powerOn;
+    private SpriteRenderer m_spriteRenderer;
 
     [Header("Settings")]
     [SerializeField] private int m_perkID;
     private int m_perkCost = 4000;
     private float m_distanceToPlayer;
 
-
+    private void Start()
+    {
+        m_spriteRenderer = GetComponent<SpriteRenderer>();
+        m_spriteRenderer.material = m_powerOff;
+    }
 
 
 
     public void Update()
     {
 
+        if (m_playerStats.m_powerOn == true)
+        {
+            m_spriteRenderer.material = m_powerOn;
+        }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
