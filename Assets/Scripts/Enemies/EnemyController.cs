@@ -58,7 +58,7 @@ public class EnemyController : MonoBehaviour
             }
             return;
         }
-        m_cooldownTime = 100f;
+        m_cooldownTime = 200f;
         m_canAttack = false;
     }
 
@@ -69,11 +69,15 @@ public class EnemyController : MonoBehaviour
 
         if (m_health <= 0)
         {
-            m_playerStats.AddPoints(50);
+            m_playerStats.AddPoints(100);
             Destroy(gameObject);
         }
     }
 
+    /// <summary>
+    /// Gives each spawned enemy the info it needs to function.
+    /// </summary>
+    /// <param name="m_player"></param>
     public void Initialise(GameObject m_player)
     {
         m_target = m_player.transform;

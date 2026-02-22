@@ -8,16 +8,18 @@ public class SpawningManager : MonoBehaviour
     [SerializeField] private GameObject m_player;
     [SerializeField] private Transform[] m_spawnPoints;
     private Transform m_currentSpawnPoint;
-    private float m_cooldownDuration = 12f;
+    private float m_cooldownDuration = 8f;
     private float m_spawnTimer;
     private float m_minPlayerDistance;
     private int m_waveSize = 8;
     private int m_spawnCount;
+    private AudioSource m_waveStartSound;
 
     void Start()
     {
         m_stats.m_wave = 1;
-        m_spawnCount = 0;
+        m_spawnCount = 0; // Tracker for how many enemies have spawned this wave.
+        m_waveStartSound = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -62,7 +64,12 @@ public class SpawningManager : MonoBehaviour
         m_spawnCount = 0;
         if (m_waveSize < 30)
         {
-            m_waveSize += 3;
+            m_waveSize += 6;
         }
+        if (m_cooldownDuration > 2f)
+        {
+            m_cooldownDuration -= 2f;
+        }
+        m_waveStartSound.Play();
     }
 }

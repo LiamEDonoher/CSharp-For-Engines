@@ -29,7 +29,7 @@ public class PlayerWeapon : MonoBehaviour
     private void Start()
     {
         m_cursorAnimator = m_aimCursor.GetComponent<Animator>();
-        UnityEngine.Cursor.visible = false;
+        UnityEngine.Cursor.visible = false; // Hides the player cursor so no overlap with crosshair
         m_weaponRenderer = m_currentWeapon.GetComponent<SpriteRenderer>();
         m_weaponSound = m_currentWeapon.GetComponent<AudioSource>();
     }
