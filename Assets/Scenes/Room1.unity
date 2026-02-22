@@ -65618,7 +65618,7 @@ Transform:
   m_GameObject: {fileID: 1343588117}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 97.1, y: -24, z: 0}
+  m_LocalPosition: {x: 51.78, y: 18.9, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -67707,7 +67707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 1343588117}
-  m_buyDoorIndex: 0
+  m_wallBuyIndex: 1
   m_managers: {fileID: 2104933748}
 --- !u!1 &1448698123
 GameObject:
@@ -81081,7 +81081,7 @@ MonoBehaviour:
   m_BuildHeightMesh: 0
   m_MinRegionArea: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: ca09734c3106a4548b1b6562683a63e4, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!4 &1869151206
 Transform:
   m_ObjectHideFlags: 0
