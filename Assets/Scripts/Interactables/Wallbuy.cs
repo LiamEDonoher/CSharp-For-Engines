@@ -8,17 +8,19 @@ public class WallBuy : MonoBehaviour
     [SerializeField] private GameObject m_managers;
     private WeaponManager m_weaponManager;
     private PlayerStats m_playerStats;
+    private AudioSource m_purchaseSound;
 
 
 
     [Header("Settings")]
-    private int m_weaponCost = 1200;
+    private int m_weaponCost = 1000;
     private float m_distanceToPlayer;
 
     private void Start()
     {
         m_playerStats = m_player.GetComponent<PlayerStats>();
         m_weaponManager = m_managers.GetComponent<WeaponManager>();
+        m_purchaseSound = GetComponent<AudioSource>();
     }
 
 
@@ -38,8 +40,8 @@ public class WallBuy : MonoBehaviour
                 return;
             }
 
-            print("Weapon Purchased");
             m_playerStats.m_points -= m_weaponCost;
+            m_purchaseSound.Play();
 
             if (m_wallBuyIndex == 1)
             {

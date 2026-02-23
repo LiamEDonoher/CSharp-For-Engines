@@ -17,12 +17,12 @@ public class CrosshairAnim : MonoBehaviour
     /// </summary>
     public void CrosshairUpdate(int m_weaponID)
     {
-        print("Test");
         for (int i = 0; i < m_crosshairArray.Length; i++)
         {
             if (i == m_weaponID)
             {
                 m_spriteRenderer.sprite = m_crosshairArray[i];
+                m_animator.Play(i);
                 break;
             }
         }

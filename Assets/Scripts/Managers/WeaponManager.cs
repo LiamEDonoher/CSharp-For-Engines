@@ -1,30 +1,25 @@
-using JetBrains.Annotations;
-using System;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
+    [Header("Variables")]
     public float m_weaponDamage;
     public float m_cooldownTimer;
     private SpriteRenderer m_weaponSprite;
-    private PlayerWeapon m_playerWeapon;
     public Sprite[] m_spriteArray;
     public AudioClip[] m_weaponSound;
-    private CrosshairAnim m_crosshairAnim;
     private bool m_staminaBuff;
 
+    [Header("References")]
     [SerializeField] GameObject m_aimCursor;
     [SerializeField] private GameObject m_currentWeapon;
     [SerializeField] private AudioSource m_weaponSoundSource;
+    [SerializeField] private PlayerWeapon m_playerWeapon;
+
 
     private void Start()
     {
         m_weaponSprite = m_currentWeapon.GetComponent<SpriteRenderer>();
-        m_playerWeapon = m_currentWeapon.GetComponent<PlayerWeapon>();
-        m_crosshairAnim = GetComponent<CrosshairAnim>();
         m_staminaBuff = false; // Makes sure the player starts without the perk.
         Revolver();
     }
@@ -46,10 +41,11 @@ public class WeaponManager : MonoBehaviour
     {
         print("Revolver");
         m_weaponSprite.sprite = m_spriteArray[0];
+        //m_crosshairSprite.sprite = m_revolverSprite;
         m_weaponSoundSource.Stop();
+        m_weaponSoundSource.volume = 0.3f;
         m_weaponSoundSource.clip = m_weaponSound[0];
-        //m_playerWeapon.m_weaponDamage = 20;
-        m_crosshairAnim.CrosshairUpdate(0); // Updates the crosshair in script
+        m_playerWeapon.m_weaponDamage = 20;
         if (m_staminaBuff)
         {
             m_playerWeapon.m_cooldownTimer = 0.8f;
@@ -67,10 +63,11 @@ public class WeaponManager : MonoBehaviour
     {
         print("Shotgun");
         m_weaponSprite.sprite = m_spriteArray[1];
+        //m_crosshairSprite.sprite = m_shotgunSprite;
         m_weaponSoundSource.Stop();
+        m_weaponSoundSource.volume = 0.8f;
         m_weaponSoundSource.clip = m_weaponSound[1];
-        //m_playerWeapon.m_weaponDamage = 50;
-        m_crosshairAnim.CrosshairUpdate(1);
+        m_playerWeapon.m_weaponDamage = 200;
         if (m_staminaBuff)
         {
             m_playerWeapon.m_cooldownTimer = 1.2f;
@@ -80,6 +77,4 @@ public class WeaponManager : MonoBehaviour
             m_playerWeapon.m_cooldownTimer = 2f;
         }
     }
-
-
 }

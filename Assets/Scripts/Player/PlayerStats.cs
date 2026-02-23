@@ -14,7 +14,9 @@ public class PlayerStats : MonoBehaviour
     private int m_perkID;
     private PlayerHealth m_health;
     private bool[] m_perks = new bool[3];
-    
+    public float m_enemyHealth = 100;
+
+
 
     private void Start()
     {

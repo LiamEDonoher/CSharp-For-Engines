@@ -57,6 +57,7 @@ public class PlayerWeapon : MonoBehaviour
 
     private void Fire()
     {
+        m_weaponSound.pitch = Random.Range(0.8f, 1.4f);
         m_weaponSound.Play();
         GameObject m_spawnedProjectile = Instantiate(m_projectilePrefab, m_gunPos.position, Quaternion.identity);
         PlayerProjectile m_instantiatedProjectile = m_spawnedProjectile.GetComponent<PlayerProjectile>();

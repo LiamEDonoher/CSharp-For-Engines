@@ -8,6 +8,7 @@ public class MysteryBox : MonoBehaviour
     [SerializeField] private SpriteRenderer m_boxUI;
     private WeaponManager m_weaponManager;
     private PlayerStats m_playerStats;
+    private AudioSource m_purchaseSound;
 
 
     [Header("Settings")]
@@ -18,6 +19,7 @@ public class MysteryBox : MonoBehaviour
     {
         m_playerStats = m_player.GetComponent<PlayerStats>();
         m_weaponManager = m_managers.GetComponent<WeaponManager>();
+        m_purchaseSound = GetComponent<AudioSource>();
         m_boxUI.enabled = false;
     }
 
@@ -46,7 +48,7 @@ public class MysteryBox : MonoBehaviour
                     return;
                 }
 
-                print("Weapon Purchased");
+                m_purchaseSound.Play();
                 m_playerStats.m_points -= m_weaponCost;
                 GenerateWeapon();
             }

@@ -12,6 +12,7 @@ public class PerkMachine : MonoBehaviour
     [SerializeField] private Material m_powerOff;
     [SerializeField] private Material m_powerOn;
     private SpriteRenderer m_spriteRenderer;
+    private AudioSource m_purchaseSource;
 
     [Header("Settings")]
     [SerializeField] private int m_perkID;
@@ -21,6 +22,7 @@ public class PerkMachine : MonoBehaviour
     private void Start()
     {
         m_spriteRenderer = GetComponent<SpriteRenderer>();
+        m_purchaseSource = GetComponent<AudioSource>();
         m_spriteRenderer.material = m_powerOff;
     }
 
@@ -55,7 +57,7 @@ public class PerkMachine : MonoBehaviour
                 return;
             }
 
-            print("Perk Purchased");
+            m_purchaseSource.Play();
             m_playerStats.m_points -= m_perkCost;
             m_playerStats.TriggerPerk(m_perkID);
         }

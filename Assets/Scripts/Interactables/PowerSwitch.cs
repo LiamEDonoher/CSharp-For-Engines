@@ -7,17 +7,18 @@ public class PowerSwitch : MonoBehaviour
     [SerializeField] private GameObject m_managers;
     private PlayerStats m_playerStats;
     private ParticleSystem m_particles;
+    private AudioSource m_powerOnSound;
 
 
 
     [Header("Settings")]
-    private int m_weaponCost = 1200;
     private float m_distanceToPlayer;
 
     private void Start()
     {
         m_playerStats = m_player.GetComponent<PlayerStats>();
         m_particles = m_player.GetComponent<ParticleSystem>();
+        m_powerOnSound = m_player.GetComponent<AudioSource>();
     }
 
 
@@ -34,6 +35,7 @@ public class PowerSwitch : MonoBehaviour
 
             m_playerStats.m_powerOn = true;
             m_particles.Play();
+            m_powerOnSound.Play();
         }
     }
 

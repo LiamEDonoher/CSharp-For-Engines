@@ -4,9 +4,12 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] private AudioSource m_spawnSound;
+
     GameObject m_player;
     PlayerStats m_playerStats;
     NavMeshAgent m_agent;
+
     private Animator m_animator;
     public Transform m_target;
     public Vector2 m_direction;
@@ -17,6 +20,12 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D m_rigidBody;
     private PlayerHealth m_healthHandler;
     private float m_health = 100;
+    private AudioSource m_attackSound;
+
+    private void Start()
+    {
+        m_attackSound = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -58,6 +67,8 @@ public class EnemyController : MonoBehaviour
             }
             return;
         }
+        m_attackSound.pitch = Random.Range(0.8f, 1.2f);
+        m_attackSound.Play();
         m_cooldownTime = 200f;
         m_canAttack = false;
     }
@@ -66,6 +77,7 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(float m_damage)
     {
         m_health -= m_damage;
+        m_playerStats.AddPoints(10);
 
         if (m_health <= 0)
         {
@@ -86,7 +98,8 @@ public class EnemyController : MonoBehaviour
         m_agent = GetComponent<NavMeshAgent>();
         m_rigidBody = GetComponent<Rigidbody2D>();
         m_cooldownTime = 100f;
-        m_health = 10;
+        m_health = m_playerStats.m_enemyHealth;
         m_agent.stoppingDistance = 2f;
+        m_spawnSound.pitch = Random.Range(0.8f, 1.4f);
     }
 }
