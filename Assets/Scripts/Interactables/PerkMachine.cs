@@ -38,10 +38,12 @@ public class PerkMachine : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
+            print("1");
             m_distanceToPlayer = Vector3.Distance(transform.position, m_player.transform.position);
 
             if (m_playerStats.m_powerOn == false)
             {
+                print("Power is off");
                 return;
             }
 

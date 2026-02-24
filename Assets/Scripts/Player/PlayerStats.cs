@@ -7,7 +7,8 @@ public class PlayerStats : MonoBehaviour
 
     [SerializeField] private TMP_Text m_text;
     [SerializeField] private PerkUI m_perkUI;
-    [SerializeField] private GameObject m_powerDoor;
+    [SerializeField] private GameObject m_powerDoor;   
+    [SerializeField] private WeaponManager m_weaponManager;   
     public int m_points;
     public bool m_powerOn;
     public int m_wave;
@@ -16,11 +17,19 @@ public class PlayerStats : MonoBehaviour
     private bool[] m_perks = new bool[3];
     public float m_enemyHealth = 100;
 
+    [Header("Settings")]
+    [SerializeField] private SpriteRenderer m_staminaIcon;
+    [SerializeField] private SpriteRenderer m_healthIcon;
+    [SerializeField] private SpriteRenderer m_reviveIcon;
+
 
 
     private void Start()
     {
-        m_powerOn = false;
+        m_powerOn = true;
+        m_staminaIcon.enabled = false;
+        m_healthIcon.enabled = false;
+        m_reviveIcon.enabled = false;
     }
 
     private void Update()
@@ -52,15 +61,18 @@ public class PlayerStats : MonoBehaviour
 
         if (m_perkID == 0)
         {
-            return;
+            m_weaponManager.StaminaBuff();
+            m_staminaIcon.enabled = true;
         }
         else if (m_perkID == 1)
         {
             m_health.HealthBuff();
+            m_healthIcon.enabled = true;
         }
         else if (m_perkID == 2)
         {
             m_health.ReviveBuff();
+            m_reviveIcon.enabled = true;
         }
         else
         {

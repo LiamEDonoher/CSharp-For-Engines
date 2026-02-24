@@ -5,7 +5,6 @@ public class BuyDoor : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject m_player;
     [SerializeField] private GameObject m_managers;
-    [SerializeField] private int m_doorID;
     private PlayerStats m_playerStats;
     private float m_distanceToPlayer;
 
@@ -35,9 +34,9 @@ public class BuyDoor : MonoBehaviour
                 return;
             }
 
-            print("Door Purchased");
             m_playerStats.m_points -= m_doorCost;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
 
         }
     }
