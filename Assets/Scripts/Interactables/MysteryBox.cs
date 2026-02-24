@@ -26,6 +26,7 @@ public class MysteryBox : MonoBehaviour
 
     public void Update()
     {
+        m_distanceToPlayer = Vector3.Distance(transform.position, m_player.transform.position);
         if (m_distanceToPlayer > 3)
         {
             m_boxUI.enabled = false;
@@ -36,7 +37,6 @@ public class MysteryBox : MonoBehaviour
             m_boxUI.enabled = true;
             if (Input.GetKeyDown(KeyCode.E))
             {
-                m_distanceToPlayer = Vector3.Distance(transform.position, m_player.transform.position);
 
                 if (m_playerStats.m_powerOn == false)
                 {

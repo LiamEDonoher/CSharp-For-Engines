@@ -6,8 +6,7 @@ public class PlayerStats : MonoBehaviour
 {
 
     [SerializeField] private TMP_Text m_text;
-    [SerializeField] private PerkUI m_perkUI;
-    [SerializeField] private GameObject m_powerDoor;   
+    [SerializeField] private PerkUI m_perkUI;  
     [SerializeField] private WeaponManager m_weaponManager;   
     public int m_points;
     public bool m_powerOn;
@@ -26,6 +25,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
+        m_health = GetComponent<PlayerHealth>();
         m_powerOn = true;
         m_staminaIcon.enabled = false;
         m_healthIcon.enabled = false;
@@ -35,10 +35,6 @@ public class PlayerStats : MonoBehaviour
     private void Update()
     {
         m_text.text = m_points.ToString();
-        if (m_powerOn)
-        {
-            Destroy(m_powerDoor);
-        }
     }
 
     public void AddPoints(int m_pointsIncrease)

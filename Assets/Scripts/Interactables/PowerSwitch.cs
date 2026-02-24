@@ -17,16 +17,16 @@ public class PowerSwitch : MonoBehaviour
     private void Start()
     {
         m_playerStats = m_player.GetComponent<PlayerStats>();
-        m_particles = m_player.GetComponent<ParticleSystem>();
-        m_powerOnSound = m_player.GetComponent<AudioSource>();
+        m_particles = GetComponent<ParticleSystem>();
+        m_powerOnSound = GetComponent<AudioSource>();
     }
 
 
     public void Update()
     {
+        m_distanceToPlayer = Vector3.Distance(transform.position, m_player.transform.position);
         if (Input.GetKeyDown(KeyCode.E))
         {
-            m_distanceToPlayer = Vector3.Distance(transform.position, m_player.transform.position);
 
             if (m_distanceToPlayer > 3)
             {
